@@ -7,6 +7,9 @@ img { height: auto; max-width: 100%; }
 .mb0 { margin-bottom:0px!important }
 .mb10 { margin-bottom:10px!important }
 .mb20 { margin-bottom:20px!important }
+.mt20{ margin-top: 20px;}
+.mt40{ margin-top: 40px;}
+.mt70{ margin-top: 70px;}
 .clear { clear: both; }
 .orange-bg{ background:rgba(256,166,77,0.9);}
 .green-bg{background:rgba(66,179,146,0.9);}
@@ -59,12 +62,12 @@ ul li { list-style:none;}
 .right-tabing{ border-top: 3px solid #38466B;}
 .right-tabing .nav-tabs{}
 .right-tabing .nav-tabs > li{ width: 33.33%;}
-.right-tabing .nav-tabs > li.active > a,.right-tabing .nav-tabs > li.active > a:hover,.right-tabing .nav-tabs > li.active > a:focus,.right-tabing .nav-tabs > li a:hover{ background: transparent; border: 0;}
+.right-tabing .nav-tabs > li.active > a,.right-tabing .nav-tabs > li.active > a:hover,.right-tabing .nav-tabs > li.active > a:focus,.right-tabing .nav-tabs > li a:hover{ background: transparent; }
 .right-tabing .nav-tabs > li > a{ border:0 none; background: #C6D4E1; width: 100%; text-align: center; font-size: 14px; font-weight: 700; color: #323335;}
 .right-tabing .tab-content{  clear: both; display: block; padding: 20px 5%;}
 .right-tabing .tab-content .form-group label{ font-weight: 600; color: #374866;}
 .right-tabing .tab-content .form-control{ box-shadow: none; background: #fff; border:0;}
-.right-tabing .tab-content .btn.btn-primary{ background: #283758; border:0;}
+.btn.btn-primary{ background: #283758; border:0;}
 
 #customer_info .form-group { display: inline-block; width:50%; float: left; min-height:80px; margin-bottom: 0;}
 #customer_info .error {color: #DD4C4C; font-size: 13px;
@@ -78,3 +81,42 @@ ul li { list-style:none;}
 #customer_form_msg {display: none; width: 100%; color: #fff; text-align: center; padding: 5px; border-radius: 3px; border: 2px solid #fff; box-shadow: 0px 0px 3px rgba(0,0,0,0.2);}
 .success-msg {  background: #34863A; }
 .error-msg { background: #863444;}
+
+/*2014-04-07*/
+.right-tabing.popup-tab{border-top: 0 none; color: #fff; }
+.right-tabing.popup-tab li{ width: 24%; margin-right: 1%; border:0!important;}
+.right-tabing.popup-tab li a{ background: #d8e2ec; border:1px solid #d8e2ec; border-bottom:0 none; color: #374866;}
+.right-tabing.popup-tab li.active a,.right-tabing.popup-tab li.active a,.right-tabing.popup-tab li.active a:hover,.right-tabing.popup-tab li.active a:focus,.right-tabing.popup-tab li:hover a,.right-tabing.popup-tab li:focus a{ border:0 none;  background: #f5f5f5;} 
+.right-tabing.popup-tab li{ background: #fff; margin-bottom: -2px!important;}
+.modal-header{ background: #374769; border-radius: 5px 5px 0 0; color: #fff;}
+.modal-content{ border: 0;}
+.modal-footer{ border: 0 none; border-top: 3px solid #38466B; margin-top: 0; background: #374769; border-radius: 0 0 5px 5px;}
+.tab-content{background: #f5f5f5; border-radius: 3px;}
+.modal-header .close{ opacity: 1;}
+.modal-header .close span{ color: #FFF;}
+.right-tabing.popup-tab .nav-tabs{ border-radius: 0 0 3px 3px; border: 0 none!important;}
+.user-info-list{ display: block; padding: 0 20px 15px; border-bottom: 1px solid #ccc; margin-bottom: 15px; cursor: pointer;}
+.user-info-list a{ text-decoration: none;}
+.user-info-list:last-child{ border-bottom: 0; margin-bottom: 0;}
+.user-info-list h4{ margin-bottom: 5px; font-size: 16px; color: #374866; font-weight: 600;}
+.user-info-list p{ font-size: 14px; margin-bottom: 5px; color: #323335;}
+.post-time{ float: right; color: #323335;}
+.discript span:not(:last-child):after{ content: '|'; margin-left: 8px; padding-right: 5px; position: relative; display: inline-block;}
+.discript span:after:last-clild(){ display: none;}
+.form-group .btn.btn-success{ background: #5edb99; border-color: #5edb99;}
+.modal-footer .btn.btn-primary{ background: #5edb99; border-color: #5edb99;}
+.home-tab .form-group label{}
+.home-tab .form-group span{ color: #323335; font-weight: 400;}
+.btn-success{ background: #5edb99;}
+.right-tabing.popup-tab .form-control{ border:1px solid #c7d5e2}
+.right-tabing.popup-tab .control-label{ text-align: left;}
+.select2-dropdown-open .select2-choice{ border:1px solid #c7d5e2!important}
+.right-tabing.popup-tab .table,.right-tabing.popup-tab .table td,.right-tabing.popup-tab .table th{ border-color: #c7d5e2; color: #374866;}
+.delete-icon{ font-size: 18px;}
+
+
+/**/
+.login-wrap{ margin: 50px auto 0; width: 340px; padding: 20px; border: 1px solid #374769; background: #374769; border-radius: 5px;}
+.login-wrap label{ color: #fff;}
+.login-wrap{}
+#header h1 a{ text-decoration: none;}

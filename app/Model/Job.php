@@ -5,6 +5,7 @@ App::uses('AppModel', 'Model');
  *
  * @property User $User
  * @property Account $Account
+ * @property Customer $Customer
  */
 class Job extends AppModel {
 
@@ -45,6 +46,11 @@ class Job extends AppModel {
 		'User' => array(
 			'className' => 'User',
 			'foreignKey' => 'user_id',
+		
+		),
+		'Customer' => array(
+			'className' => 'Customer',
+			'foreignKey' => 'customer_id',
 		
 		)
 	);

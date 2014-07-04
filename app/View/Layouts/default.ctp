@@ -44,11 +44,11 @@ $cakeDescription = __d('Clear Window', 'Clear Window');
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, FULL_BASE_URL.$this->webroot); ?></h1>
+			
 		</div>
 		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+			
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
@@ -56,6 +56,8 @@ $cakeDescription = __d('Clear Window', 'Clear Window');
 			
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php if($_SERVER['HTTP_HOST'] != 'demo.xicom.us'){
+	 echo $this->element('sql_dump'); 
+	}?>
 </body>
 </html>

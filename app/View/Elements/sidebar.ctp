@@ -10,6 +10,7 @@
                         <li><a href="#" >Schedule <i class="fa fa-clock-o"></i></a></li>
                         <li><a href="#" >Report <i></i></a></li>
                         <li><a href="#" >Tasks <i  class="fa fa-th-list"></i></a></li>
+                         <li><?php echo $this->Html->link('Logout',array('controller'=>'Users','action'=>'logout')); ?></li>
                     </ul>
                 </div>
             </div>

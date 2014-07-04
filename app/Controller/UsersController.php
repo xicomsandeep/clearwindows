@@ -347,16 +347,17 @@ class UsersController extends AppController {
 	 
 	 public function login()
 	 {
-	 	debug($this->request->data);
+	 	if($this->request->is('post')){
 	 	if ($this->Auth->login())
 		     {
 		     	$this->Session->setFlash('Successfully logged in', 'flash_success');
 			  $this->redirect(array('action'=>'dashboard'));
 			 }
 		else{
-			 	
+			 	$this->redirect($this->Auth->redirect());
 				
 			 }
+		}
 	 }
 	 
 	 /**
@@ -366,10 +367,24 @@ class UsersController extends AppController {
 	  */
 	 public function dashboard()
 	 {
-		$this->loadModel('CustomerType'); 
+		  $this->loadModel('CustomerType'); 
 		  $customer_type=$this->CustomerType->find('list',array('id','name'));
-		  $this->set(compact('customer_type'));	
+		  $employee=$this->User->find('list',array('conditions'=>array('User.group_id'=>2),'fields'=>array('id','username')));
+		  $this->set(compact('customer_type','employee'));	
 	 } 
+	  /**
+	  * purpose:Front end logout
+	  * created by:Abhishek Tripathi
+	  * created on:4 july 2014
+	  */
+	 public function logout()
+	{
+		$this->Session->destroy();		
+		$this->Auth->logout();
+		$this->Session->setFlash(__('You are logged out successfully'),'default',array(),'success');
+		$referer = array('controller' => 'users', 'action' => 'login');
+		$this->redirect($referer);
+	}
 	 
 	
 }

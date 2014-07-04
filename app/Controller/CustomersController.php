@@ -50,7 +50,7 @@ class CustomersController extends AppController {
   }
   
  /**
- * Purpose:get customer information from ajax request 
+ * Purpose:get customer list from ajax request 
  * created on:3 july 2014
  * created by:Abhishek Tripathi
  */  
@@ -81,6 +81,28 @@ class CustomersController extends AppController {
 			echo json_encode($res);
 			exit;
 	}
-  } 
+  }
+   
+ /**
+ * Purpose:get customer information from ajax request 
+ * created on:4 july 2014
+ * created by:Abhishek Tripathi
+ */    
+ 
+  public function get_user_info()
+  {
+  	$customer=array();
+  	if($this->request->is('Post'))
+	{
+		$id=$this->request->data['id'];
+		$customers=$this->Customer->find('first',array('conditions'=>array('Customer.id'=>$id)));
+		if($customers)
+		{
+		  $res=response_arr('Successfully added',0,$customers);
+			echo json_encode($res);
+			exit;	
+		}
+	}
+  }
 
 }
