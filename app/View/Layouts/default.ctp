@@ -29,11 +29,9 @@ $cakeDescription = __d('Clear Window', 'Clear Window');
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css(array('bootstrap','font-awesome','bootstrap-select.min','style','responsive','jquery-ui','select2/select2'));
-		echo $this->Html->script(array('jquery-1.11.0.min','jquery.form.min','jquery.validate','jquery-ui.custom.min','bootstrap.min','bootstrap-select.min','jquery-searchFilter','script','knockout-3.1.0','ajax','select2/select2'));
-
-		echo $this->fetch('meta');
+        echo $this->Html->css(array('bootstrap','font-awesome','bootstrap-select.min','style','responsive','jquery-ui','select2/select2','datepicker'));
+		echo $this->Html->script(array('jquery-1.11.0.min','jquery.form.min','jquery.validate','jquery-ui.custom.min','bootstrap.min','bootstrap-select.min','knockout-3.1.0','ajax','select2/select2','bootstrap-datepicker'));
+        echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
@@ -42,20 +40,12 @@ $cakeDescription = __d('Clear Window', 'Clear Window');
 	</script>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			
-		</div>
-		<div id="content">
+	
 
 			
 
 			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			
-		</div>
-	</div>
+	
 	<?php if($_SERVER['HTTP_HOST'] != 'demo.xicom.us'){
 	 echo $this->element('sql_dump'); 
 	}?>

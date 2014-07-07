@@ -155,8 +155,19 @@ class UsersController extends AppController {
 			
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The user has been saved'));
+				$message="username:".$this->request->data['User']['email']."<br/> password:".$this->request->data['User']['password'];
+				$Email = new CakeEmail('smtp');
+						
+						$Email->to($this->request->data['User']['email']);
+						$Email->subject('Employee login detail');
+						$Email->send($message);
+				
 				$this->redirect(array('action' => 'index'));
+				
+				
+				
 			} else {
+				debug('dfsf');exit;
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
 			}
 		}

@@ -21,6 +21,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 App::uses('Controller', 'Controller');
+App::uses('CakeEmail', 'Network/Email');
 
 
 /**
@@ -35,7 +36,7 @@ class AppController extends Controller
 {
 
 	var $helpers = array('Html', 'Form', 'Session', 'Js');
-	var $components = array('Email','Session','Cookie', 'Auth');
+	var $components = array('Session','Cookie', 'Auth');
 	
 	function beforeFilter()
 	{

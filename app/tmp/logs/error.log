@@ -2362,3 +2362,259 @@ Stack Trace:
 #3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
 #4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-07-07 05:34:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:34:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 05:34:36 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:34:36 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 05:34:54 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:34:54 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 05:35:12 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:35:12 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 05:35:19 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:35:19 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 05:35:45 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:35:45 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 05:36:40 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 242]
+2014-07-07 05:36:40 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/clearw...', 242)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/clearw...', 242, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 06:39:38 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Accounts/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Accounts/add.ctp',
+)
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-07 07:43:37 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Accounts/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Accounts/add.ctp',
+)
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-07 07:45:13 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Accounts/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Accounts/add.ctp',
+)
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-07 08:36:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'job_id' cannot be null
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Account), Array, Array)
+#4 /var/www/clearwindows/app/Controller/AccountsController.php(20): Model->save(Array)
+#5 [internal function]: AccountsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-07 08:36:52 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Customers/get_user_info.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Customers/get_user_info.ctp',
+)
+Request URL: /clearwindows/Customers/get_user_info
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-07 09:00:48 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/clearwindows/app/Controller/AccountsController.php, line 41]
+2014-07-07 09:00:48 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /clearwindows/Accounts/customer_accounts
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/clearw...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/clearw...', 41, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/clearw...', 41, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 09:01:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Accounts.customer_id' in 'where clause'
+Request URL: /clearwindows/Accounts/customer_accounts
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Account...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Account...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Account...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Account), Array)
+#5 /var/www/clearwindows/app/Controller/AccountsController.php(41): Model->find('all', Array)
+#6 [internal function]: AccountsController->customer_accounts()
+#7 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-07-07 09:10:30 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Accounts/customer_accounts.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Accounts/customer_accounts.ctp',
+)
+Request URL: /clearwindows/Accounts/customer_accounts
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-07 09:18:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'job_id' cannot be null
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Account), Array, Array)
+#4 /var/www/clearwindows/app/Controller/AccountsController.php(20): Model->save(Array)
+#5 [internal function]: AccountsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-07 09:18:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'job_id' cannot be null
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Account), Array, Array)
+#4 /var/www/clearwindows/app/Controller/AccountsController.php(20): Model->save(Array)
+#5 [internal function]: AccountsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-07 09:18:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'job_id' cannot be null
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Account), Array, Array)
+#4 /var/www/clearwindows/app/Controller/AccountsController.php(20): Model->save(Array)
+#5 [internal function]: AccountsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-07 09:18:50 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'job_id' cannot be null
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Account), Array, Array)
+#4 /var/www/clearwindows/app/Controller/AccountsController.php(20): Model->save(Array)
+#5 [internal function]: AccountsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-07 09:22:14 Error: [MissingActionException] Action AccountsController::delete_job() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountsController',
+  'action' => 'delete_job',
+)
+Request URL: /clearwindows/Accounts/delete_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-07 12:34:33 Error: Fatal Error (1): Call to a member function save() on a non-object in [/var/www/clearwindows/app/Controller/EventsController.php, line 20]
+2014-07-07 12:34:33 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /clearwindows/Events/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/clearw...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/clearw...', 20, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/clearw...', 20, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-07 13:12:44 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/clearwindows/app/Controller/EventsController.php, line 76]
+2014-07-07 13:12:44 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /clearwindows/Events/event_filter
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/clearw...', 76)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/clearw...', 76, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/clearw...', 76, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

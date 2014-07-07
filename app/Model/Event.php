@@ -14,7 +14,7 @@ class Event extends AppModel {
  *
  * @var array
  */
-	public $validate = array(
+	/* public $validate = array(
 		'id' => array(
 			'naturalnumber' => array(
 				'rule' => array('naturalnumber'),
@@ -70,6 +70,7 @@ class Event extends AppModel {
 			),
 		),
 	);
+	 * */
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
