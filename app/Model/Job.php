@@ -14,6 +14,24 @@ class Job extends AppModel {
  *
  * @var array
  */
+    public $contain=array(
+		'User'=>array(
+		    'fields'=>array(
+		          'first_name',
+		          'last_name',
+		          'id'
+		        )
+		),
+	    'Customer'=>array(
+		     'fields'=>array(
+			     'first_name',
+			     'last_name',
+			     'id'
+			   )
+		  )  
+		); 
+ 
+ 
 	public $validate = array(
 		'id' => array(
 			'naturalnumber' => array(
@@ -34,6 +52,51 @@ class Job extends AppModel {
 			),
 		),
 	);
+	
+	/**Purpose: get all job information 
+	 * created on:8 july 2014
+	 * created by:Abhishek Tripathi
+	 */
+	public function get_all($id=null)
+	{
+		$condition=array();    
+		if(isset($id)){
+			$condition=array(
+			 'Job.customer_id'=>$id
+			);
+		} 
+		$this->recursive=2;  
+		$jobs=$this->find('all',array('conditions'=>$condition,'fields'=>array('id','subject','description','created'),'contain'=>$this->contain));
+		return $jobs;
+	}
+	
+	/**Purpose: get all job information on filter 
+	 * created on:8 july 2014
+	 * created by:Abhishek Tripathi
+	 */
+	 public function get_data_filter($keyword=null){
+	 	$conditions=array();
+		if(isset($keyword))
+		{
+			 append_condition($conditions, 'Job.subject', 'any_like', $keyword);
+			 append_condition($conditions, 'Job.description', 'any_like', $keyword);
+		}
+		//debug($conditions);exit;
+		$jobs=$this->find('all',array('conditions'=>array('OR'=>$conditions),'fields'=>array('id','subject','description','created'),'contain'=>$this->contain));
+		return $jobs;
+	 }
+	 
+	 public function get_detail($id=null){
+	 	$condition=array();    
+		if(isset($id)){
+			$condition=array(
+			 'Job.id'=>$id
+			);
+		} 
+		$this->recursive=2;  
+		$jobs=$this->find('all',array('conditions'=>$condition,'fields'=>array('id','subject','description','created'),'contain'=>$this->contain));
+		return $jobs;
+	 }
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 

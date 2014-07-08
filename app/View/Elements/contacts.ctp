@@ -222,7 +222,7 @@
 											<td data-bind="text:$index"></td>
 											<td data-bind="text:Customer.first_name +Customer.last_name"></td>
 											<td data-bind="text:Job.created"></td>
-											<td data-bind="text:(Job.description.length > 6 ? Job.description.substring(0, 5) + '...' : Job.description)"></td>
+											<td data-bind="text:(Job.subject.length > 6 ? Job.subject.substring(0, 5) + '...' : Job.subject)"></td>
 											<td><a  class="delete-icon" data-bind="click:function(){remove_job($data.Job.id,$data.Customer.id)}"><i class="fa fa-trash-o"></i></a></td>
 										</tr>
 									</tbody>

@@ -1,20 +1,24 @@
      <div class="right-bar">
                 <div class="profilePic">
                     <a href="#" >
-                        <figure><?php echo $this->Html->image('profile-pic.png'); ?></figure>
-                        <span><?php echo $user_info['User']['username'];?></span>
+                        <figure><?php echo $this -> Html -> image('profile-pic.png'); ?></figure>
+                        <span><?php echo $user_info['User']['username']; ?></span>
                         <div class="clear"></div>
                     </a>                                       
                 </div>
                 <div class="events-log common-select">
                     <h4>Events Log</h4>
-                    <select class="selectpicker">
-                        <option>Live Filter</option>
-                        <option>Live Filter</option>
-                        <option>Live Filter</option>
-                        <option>Live Filter</option>
-                    </select>
+                  <div class="form-group">
+                                    
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="keyword" type="event_log_search" class="form-control" data-bind="value: event_log_query, valueUpdate: 'keyup'" autocomplete="off" >
+                                      <div class="list-group event_log_ui" data-bind="foreach: event_log" >
+										  
+										  <a href="#" class="list-group-item" data-bind="text:event_type" ></a>
+										 
+									</div>
+                                </div>
                 </div>
+              
                 <div class="right-tabing">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">

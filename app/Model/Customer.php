@@ -100,27 +100,18 @@ class Customer extends AppModel {
 			'className' => 'Event',
 			'foreignKey' => 'customer_id',
 			'dependent' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
+	
 		),
 		'Round' => array(
 			'className' => 'Round',
 			'foreignKey' => 'customer_id',
 			'dependent' => true,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
+			
+		),
+		'Job'=>array(
+		  'className'=>'Job',
+		  'foreignKey'=>'customer_id',
+		  'dependent'=>'true'
 		)
 	);
 

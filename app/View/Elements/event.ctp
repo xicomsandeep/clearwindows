@@ -8,7 +8,7 @@
 					
 				</li>
 				<li>
-					<a href="#">Event	</a>
+					<a href="#">Event</a>
 				</li>
 			</ol>
 		</div>
@@ -26,7 +26,7 @@
 			<div class="description-area">
 				<h3>Heading Title</h3>
 				  <div id="ScrollBox"   data-bind="foreach: events" style="border:1px solid;">
-					<div class="user-info-list"  data-bind="click:function(){get_user_info($data.id)}">
+					<div class="user-info-list" >
 						<a> <span class="post-time"></span> <h4><span data-bind="text:event_type"></span></h4>
 						<p class="discript" >
 							<span data-bind="text:description"></span>
