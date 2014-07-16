@@ -112,15 +112,31 @@ $(document).ready(function() {
 		format : "dd/mm/yyyy"
 	});
 	
-	//------------------------side bar navigation selection-------------------------------------
-	
+  //purpose:side bar selection
+  //created on:16 july 2014
+  //created by:Abhishek Tripathi
 	$('.nav_baar').on('click',function(){
 	  	var section=$(this).attr('rel');
 	  	$('.middle-sec').hide();
 	  	$('.'+section+'_middle_section').show();
 	})
 		
+  //purpose:click event on view selection on add form
+  //created on:16 july 2014
+  //created by:Abhishek Tripathi
 	
+	  $('.view_selecter').on('click',function(){
+	  	if($(this).is(':checked')){
+	  		var view=$(this).attr('rel');
+	  		$('.view_container').hide();
+	  		$('.back_btn').show();
+	  		$('.'+view).show();
+	  		
+	  	}
+	  	
+	  });
+	  
+	  
 	
 });
 
@@ -144,6 +160,7 @@ var viewModel = {
 	job_list : ko.observable(),
 	event_log_query:ko.observable(),
     customer_account_list:ko.observable(),
+    work_space_template:ko.observable('detail'),
     //-------------------------------event section---------------------------------
 	events:ko.observable(),	
 	event_log:ko.observable(),
@@ -344,3 +361,18 @@ function get_job_detail(value){
 	});
  	
  }
+ 
+ //Purpose:function for open modal window of add form
+//created by:Abhishek Tripathi
+//created on:16 july 2014
+function open_form(){
+	$('.view_stuff').hide();
+	$('.back_btn').hide();
+	$('.view_selecter').removeAttr('checked');
+	$('.view_container').show();
+	$('#myModal').modal('show');
+}
+
+
+
+ 

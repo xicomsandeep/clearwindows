@@ -16,7 +16,7 @@
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
 					<input type="job_search" class="form-control" data-bind="value: job_query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city"type="text" />
-					<button type="button" id="form-button" class="btn btn-success" data-toggle="modal" data-target="#myModal_job_detail">
+					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>
 				</div>
@@ -43,44 +43,7 @@
 		</div>
 		</div>
 </div>
-<!--------------------------------------------------add job modal window---------------------------------------------->
-  <div class="modal fade" id="myModal_event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog" style="width:745px;height:700px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">
-							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-						</button>
-						<h4 class="modal-title" id="myModalLabel">Add Event</h4>
-					</div>
-					<div class="modal-body" style="height:400px;">
-						<?php echo $this->Form->create('Job',array('id'=>'event_detail','url'=>array('controller'=>'Events','action'=>'add')))?>
-						<span id="customer_form_msg"> </span>
-						
-						<div class="form-group">
-							<div class="col-sm-10">
-								<?php echo $this->Form->input('event_type',array('class'=>"form-control")); ?>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-10">
-								<?php echo $this->Form->input('description',array('class'=>"form-control")); ?>
-							</div>
-						</div>
-						
-				   </div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">
-							Close
-						</button>
-						<input type="submit" class="btn btn-primary" value="Save">
-					</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		
-<!-----------------------------------------------add job modal window------------------------------------------------------------------>		
+
 
 <!---------------------------------------------------job modal window--------------------------------------------->
    <!-- Button trigger modal -->

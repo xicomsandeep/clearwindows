@@ -38,7 +38,8 @@ class EventsController extends AppController {
   	if($this->request->is('Post'))
 	{
 		$events=array(); 
-		$event_list=$this->Event->find('all');
+		$event_list=$this->Event->find('all',array('order' => array(
+        'Event.created' => 'desc')));
         		
 		if($event_list)
 		{
@@ -70,11 +71,13 @@ class EventsController extends AppController {
 			
 		  append_condition($cond_arr, 'Event.event_type', 'like', $query);
 		  append_condition($cond_arr, 'Event.description', 'like', $query);
-		$event_info=$this->Event->find('all',array('conditions'=>array('OR'=>$cond_arr)));
+		$event_info=$this->Event->find('all',array('conditions'=>array('OR'=>$cond_arr),'order' => array(
+        'Event.created' => 'desc')));
 		}
 		else{
 			
-			$event_info=$this->Event->find('all');
+			$event_info=$this->Event->find('all',array('order' => array(
+        'Event.created' => 'desc')));
 		}
 		
 		foreach($event_info as $event)

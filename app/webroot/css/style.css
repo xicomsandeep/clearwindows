@@ -124,3 +124,7 @@ ul li { list-style:none;}
 .table-scroll{ max-height: 167px; overflow: auto;}
 .event_log_ui{overflow-y: auto;border: 0px solid #ccc!important;max-height: 250px;}
 
+/*16 july 2014*/
+.view_contact{display: none;}
+.view_job{display: none;}
+.back_btn{display:none;cursor:pointer;}

@@ -38,7 +38,7 @@ class CustomersController extends AppController {
   	$customers=array();	
   	if($this->request->is('Post'))
 	{
-		$customer_info=$this->Customer->find('all');
+		$customer_info=$this->Customer->find('all',array('order'=>array('Customer.created'=>'desc')));
 		foreach($customer_info as $customer)
 		{
 			$customers[]=$customer['Customer'];
@@ -66,7 +66,7 @@ class CustomersController extends AppController {
 			
 		  append_condition($cond_arr, 'Customer.first_name', 'like', $query);
 		  append_condition($cond_arr, 'Customer.last_name', 'like', $query);
-		$customer_info=$this->Customer->find('all',array('conditions'=>array('OR'=>$cond_arr)));
+		$customer_info=$this->Customer->find('all',array('conditions'=>array('OR'=>$cond_arr),'order'=>array('Customer.created'=>'desc')));
 		}
 		else{
 			
@@ -102,6 +102,31 @@ class CustomersController extends AppController {
 			echo json_encode($res);
 			exit;	
 		}
+	}
+  }
+  
+   /**
+ * Purpose:get customer list from ajax request 
+ * created on:3 july 2014
+ * created by:Abhishek Tripathi
+ */  
+  public function get_data_filter__()
+  {
+  
+	{
+		$customers=array();	
+		$search_keyword=$this->request->data['keyword'];
+		$this->loadModel('Search');
+		$customer=$this->Search->find('all',array(
+               'conditions'=>array('OR'=>array('name LIKE '=> "%{$search_keyword}%",'email LIKE'=>"%{$search_keyword}%",'description LIKE'=>"%{$search_keyword}%")),
+                ));
+	  foreach($customer as $cus){
+	  	$customers[]=$cus['Search'];
+	  }			
+		
+		$res=response_arr('Successfully added',0,$customers);
+			echo json_encode($res);
+			exit;
 	}
   }
 

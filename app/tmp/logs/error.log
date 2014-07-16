@@ -2754,3 +2754,175 @@ Stack Trace:
 #3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-07-16 06:20:40 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-16 06:20:41 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-16 06:26:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-16 06:26:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-16 06:27:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-16 06:27:34 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-16 06:53:15 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Customers/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Customers/add.ctp',
+)
+Request URL: /clearwindows/Customers/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 09:01:50 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Customers/get_data.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Customers/get_data.ctp',
+)
+Request URL: /clearwindows/Customers/get_data
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 09:42:04 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/clearwindows/app/Model/Job.php, line 120]
+2014-07-16 09:42:04 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /clearwindows/Jobs/delete_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/clearw...', 120)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/clearw...', 120, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/clearw...', 120, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-16 12:27:03 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/this
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 12:27:48 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/this
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 12:28:01 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/this
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 12:28:51 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/this
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 12:29:01 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/abh
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 12:29:12 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/xicom
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-16 12:37:45 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Searches/search_result.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Searches/search_result.ctp',
+)
+Request URL: /clearwindows/Searches/search_result/this
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(SearchesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

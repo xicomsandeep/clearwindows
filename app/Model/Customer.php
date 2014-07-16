@@ -76,6 +76,18 @@ class Customer extends AppModel {
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+	
+	// aftersave function for manage event log-----------------------
+	public function afterSave($created,$options = array()){
+	    $obj = ClassRegistry::init('Event');
+		$event=array('Event'=>array(
+		'event_type'=>"Add Customer",
+		'customer_id'=>$this->data['Customer']['id'],
+		
+		));
+		$obj->save($event);
+	}
+	
 
 /**
  * belongsTo associations
