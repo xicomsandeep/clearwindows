@@ -118,6 +118,8 @@ $(document).ready(function() {
 	$('.nav_baar').on('click',function(){
 	  	var section=$(this).attr('rel');
 	  	$('.middle-sec').hide();
+	    	viewModel.temp('details');
+	    	data();
 	  	$('.'+section+'_middle_section').show();
 	})
 		
@@ -143,6 +145,7 @@ $(document).ready(function() {
 //---------------------------------------------knockout-------------------------------------
 
 function data() {
+		viewModel.temp('details');
 	$.post(siteurl + 'Customers/get_data', function(d) {
 		var data = JSON.parse(d);
 		var parsed = JSON.parse(d);
@@ -169,6 +172,8 @@ var viewModel = {
 	all_job_list:ko.observable(),
     job_query:ko.observable(''),
     job_detail:ko.observable(),
+    //------------------------------------------------------------------------------
+    temp:ko.observable('details'),
 	incrementClickCounter : function() {
 
 	},
@@ -176,6 +181,7 @@ var viewModel = {
 
 	},
 	search : function(value) {
+		viewModel.temp('query_result');
 		data_filter(value);
 	},
 	event_search : function(value) {
@@ -188,6 +194,8 @@ var viewModel = {
 		job_list_filter(value);
 	}
 };
+
+
 //Purpose:fetct data basis on fillter
 //created by:Abhishek Tripathi
 //created on:3 july 2014

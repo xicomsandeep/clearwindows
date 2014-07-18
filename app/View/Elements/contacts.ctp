@@ -25,7 +25,7 @@
 		<div class="col-xs-12">
 			<div class="description-area">
 				<h3>Heading Title</h3>
-				<div id="ScrollBox"   data-bind="template: { name: 'details', foreach: name }" style="border:1px solid;">
+				<div id="ScrollBox"   data-bind="template: { name: temp(), foreach: name }" style="border:1px solid;">
 					
 				</div>
 			</div>
@@ -344,7 +344,7 @@
 	</div>
 </div>
 <!------------------------------------------Customer information(Modal Window)------------------------------------------------------->
-
+<!-------------------------------------template for customer search resutl----------------------------------------->
 <script id="details" type="text/html">
     <div class="user-info-list"  data-bind="click:function(){get_user_info($data.id)}">
 						<a> <span data-bind="text:created" class="post-time"></span> <h4><span data-bind="text:first_name"></span><span data-bind="text:last_name"></span></h4>
@@ -355,3 +355,18 @@
 						
 					</div>
 </script>
+<!-------------------------------------template for customer search resutl----------------------------------------->
+<!-------------------------------------template for global search resutl----------------------------------------->
+
+<script id="query_result" type="text/html">
+    <div class="user-info-list"">
+						<a>  <h4><span data-bind="text:name"></span></h4>
+						<p class="discript" >
+							<span data-bind="text:type"></span>
+							<span data-bind="text:email"></span>
+						</p> </a>
+						
+					</div>
+</script>
+<!-------------------------------------template for global search resutl----------------------------------------->
+

@@ -54,7 +54,7 @@ class CustomersController extends AppController {
  * created on:3 july 2014
  * created by:Abhishek Tripathi
  */  
-  public function get_data_filter()
+  public function get_data_filter___()
   {
   
 	{
@@ -110,7 +110,7 @@ class CustomersController extends AppController {
  * created on:3 july 2014
  * created by:Abhishek Tripathi
  */  
-  public function get_data_filter__()
+  public function get_data_filter()
   {
   
 	{
@@ -120,6 +120,7 @@ class CustomersController extends AppController {
 		$customer=$this->Search->find('all',array(
                'conditions'=>array('OR'=>array('name LIKE '=> "%{$search_keyword}%",'email LIKE'=>"%{$search_keyword}%",'description LIKE'=>"%{$search_keyword}%")),
                 ));
+	  
 	  foreach($customer as $cus){
 	  	$customers[]=$cus['Search'];
 	  }			
