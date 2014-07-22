@@ -88,6 +88,20 @@ $(document).ready(function() {
 			});
 		}
 	});
+	//------------------------------Round add-----------------------------------
+	$('#round_form').validate({
+
+		submitHandler : function(form) {
+			$('#round_form').ajaxSubmit({
+				success : function(d) {
+					var data = JSON.parse(d);
+					if (data.error == 0) {
+						
+					}
+				}
+			});
+		}
+	});
 	//---------------------data binding-------------------------------------
 	// bind view model to html
 	ko.applyBindings(viewModel);
@@ -105,6 +119,8 @@ $(document).ready(function() {
 	events();
 	//get funtion for all job list
 	all_job_list();
+	// f=get function for all rounds
+	//all_round();
 	
 	$(".selectsearch").select2();
 	//purpose:open modal window for contacts infomation
@@ -121,7 +137,7 @@ $(document).ready(function() {
 	    	viewModel.temp('details');
 	    	data();
 	  	$('.'+section+'_middle_section').show();
-	})
+	});
 		
   //purpose:click event on view selection on add form
   //created on:16 july 2014
@@ -370,7 +386,7 @@ function get_job_detail(value){
  	
  }
  
- //Purpose:function for open modal window of add form
+//Purpose:function for open modal window of add form
 //created by:Abhishek Tripathi
 //created on:16 july 2014
 function open_form(){
@@ -381,6 +397,17 @@ function open_form(){
 	$('#myModal').modal('show');
 }
 
+//Purpose:function for get round and there jobs
+//created by:Abhishek Tripathi
+//created on:22 july 2014
+function round(){
+  $.post(siteurl + 'Jobs/get_job_list', function(d) {
+		var data = JSON.parse(d);
+		var parsed = JSON.parse(d);
+		viewModel.job(parsed.list);
+	});
+  	
+}
 
 
  
