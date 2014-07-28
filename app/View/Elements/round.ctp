@@ -15,7 +15,7 @@
 		<div class="col-xs-6">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					<input type="event_search" class="form-control" data-bind="value: event_query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" />
+					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" type="text" />
 					<button type="button" id="form-button" class="btn btn-success" data-toggle="modal" data-target="#myModal_event">
 						add
 					</button>
@@ -25,15 +25,8 @@
 		<div class="col-xs-12">
 			<div class="description-area">
 				<h3>Heading Title <button type="button" id="form-button" class="btn btn-success" data-toggle="modal" data-target="#myModal_event">Add round</button></h3>
-				  <div id="ScrollBox"   data-bind="" style="border:1px solid;">
-					<div class="user-info-list" >
-						<a> <span class="post-time"></span> <h4><span data-bind=""></span></h4>
-						<p class="discript" >
-							<span data-bind=""></span>
-								
-						</p> </a>
-						<div></div>
-					</div>
+				 <div data-bind="template: { name: temp()}" >
+				
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -72,5 +65,18 @@
 			</div>
 		</div>
 <!---------------------------------------add event modal window------------------------------------------------------>
+
+<script id="round_details" type="text/html">
+	<div id="ScrollBox"   data-bind="foreach: round_list" style="border:1px solid;">
+    <div class="user-info-list"">
+						<a>  <h4><span data-bind="text:name"></span></h4>
+						<p class="discript" >
+							<span data-bind="text:count+' jobs'"></span>
+							
+						</p> </a>
+						
+					</div>
+	</div>				
+</script>
 	
 		

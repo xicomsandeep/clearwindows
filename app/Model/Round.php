@@ -36,6 +36,11 @@ class Round extends AppModel {
  * @var array
  */
 	public $hasMany = array(
+	     'Job'=>array(
+		       'className'=>'Job',
+		       'foregnKey'=>'job_id',
+		       'dependent'=>true
+		 ),
 		'Customer' => array(
 			'className' => 'Customer',
 			'foreignKey' => 'round_id',
@@ -48,6 +53,7 @@ class Round extends AppModel {
 			'dependent' => true,
 		
 		)
+	
 	);
 
 }

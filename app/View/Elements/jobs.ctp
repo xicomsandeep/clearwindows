@@ -15,7 +15,8 @@
 		<div class="col-xs-6">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					<input type="job_search" class="form-control" data-bind="value: job_query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city"type="text" />
+					<!--<input type="job_search" class="form-control" data-bind="value: job_query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city"type="text" />-->	
+					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
 					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>
@@ -25,18 +26,8 @@
 		<div class="col-xs-12">
 			<div class="description-area">
 				<h3>Heading Title</h3>
-				 <div id="ScrollBox"   data-bind="foreach: all_job_list" style="border:1px solid;">
-					<div class="user-info-list"  >
-						<a data-bind="click:function(){get_job_detail($data.Job.id)}"> <span data-bind="text:Job.created" class="post-time"></span> <h4><span data-bind="text:Job.subject"></span></h4></a>
-						<p class="discript" >
-							<h5><b>Customer Name:</b><span data-bind="text:Customer.first_name+ Customer.last_name,click:function(){get_user_info($data.Customer.id)}"></span></h5>
-							<h5><b>Employee Name:</b><span data-bind="text:User.first_name+ User.last_name"></span></h5>
-							
-						</p>
-						<p data-bind="text:Job.description"></p>
-						 
-						<div></div>
-					</div>
+				 	<div data-bind="template: { name: temp()}" >
+				
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -120,48 +111,21 @@
 			</div>
 		</div>
 <!---------------------------------------------------job modal window--------------------------------------------->
-<!---------------------------------------------------job modal window--------------------------------------------->
-  <!---<div class="modal fade" id="myModal_employee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog" style="width:745px;height:700px;">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">
-							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-						</button>
-						<h4 class="modal-title" id="myModalLabel">Employee detail</h4>
-					</div>
-					<div class="modal-body" style="height:400px;">
-						<div id="jod_detail_form"   data-bind="foreach:employee_detail">
-									
-									<div class="form-group row">
-										<label class="col-sm-3">Employee name:</label><span class="col-sm-9" data-bind="text:User.first_name + User.last_name"></span>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-3">Email:</label><span class="col-sm-9" data-bind="text:Job.subject"></span>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-3">Address:</label><span class="col-sm-9" data-bind="text:Job.description"></span>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-3">Phone no.:</label><span class="col-sm-9" data-bind="text:Job.created"></span>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-3">Mobile no.:</label><span class="col-sm-9" data-bind="text:Job.cost"></span>
-									</div>
-								</div>
+
+<script id="job_details" type="text/html">
+<div id="ScrollBox"   data-bind="foreach: all_job_list" style="border:1px solid;">
+					<div class="user-info-list"  >
+						<a data-bind="click:function(){get_job_detail($data.Job.id)}"> <span data-bind="text:Job.created" class="post-time"></span> <h4><span data-bind="text:Job.subject"></span></h4></a>
+						<p class="discript" >
+							<h5><b>Customer Name:</b><span data-bind="text:Customer.first_name+ Customer.last_name,click:function(){get_user_info($data.Customer.id)}"></span></h5>
+							<h5><b>Employee Name:</b><span data-bind="text:User.first_name+ User.last_name"></span></h5>
 							
-						
-				   </div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">
-							Close
-						</button>
-						<input type="submit" class="btn btn-primary" value="Save">
+						</p>
+						<p data-bind="text:Job.description"></p>
+						 
+						<div></div>
 					</div>
-					</form>
 				</div>
-			</div>
-		</div>
-<!---------------------------------------------------job modal window--------------------------------------------->
+</script>				
 	
 	

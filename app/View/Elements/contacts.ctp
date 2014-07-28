@@ -15,7 +15,7 @@
 		<div class="col-xs-6">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city"type="text" />
+					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
 					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>
@@ -25,155 +25,16 @@
 		<div class="col-xs-12">
 			<div class="description-area">
 				<h3>Heading Title</h3>
-				<div id="ScrollBox"   data-bind="template: { name: temp(), foreach: name }" style="border:1px solid;">
-					
+				<div data-bind="template: { name: temp()}" >
+				
 				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
 </div>
-<!------------------------------------------Contact add form(Modal Window)------------------------------------------------------->
-<!-- Button trigger modal -->
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" style="width:745px;height:700px;">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">
-					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Add information <i class="glyphicon glyphicon-circle-arrow-left back_btn" onclick="javascript:open_form();"></i>&nbsp;</h4>
-			</div>
-			<div class="modal-body" style="height:400px;">
-				<div class="view_container">
-					<div class="radio">
-							  <label>
-							    <input type="radio" class="view_selecter" rel="view_job" name="optionsRadios"  value="option1" checked>
-							    Job
-							  </label>
-					</div>
-					<div class="radio">
-							  <label>
-							    <input type="radio" class="view_selecter" rel="view_contact" name="optionsRadios"  value="option1" checked>
-							    Contact
-							  </label>
-					</div>
-					<div class="radio">
-							  <label>
-							    <input type="radio" class="view_selecter" rel="view_notes" name="optionsRadios"  value="option1" checked>
-							    Note
-							  </label>
-					</div>
-				</div>
-				<div class="view_contact view_stuff">
-					<?php echo $this->Form->create('Customer',array('id'=>'customer_info','url'=>array('controller'=>'Customers','action'=>'add')))?>
-					<span id="customer_form_msg"> </span>
-					<div class="form-group">
-						<?php echo $this -> Form -> label('Customer Type', __('Customer Type')); ?>
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> radio('customer_type_id', $customer_type, array('legend' => false, 'div' => false)); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('first_name', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('last_name', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('email', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('password', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('telephone_no', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('mobile_no', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('add_1', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('add_2', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('add_3', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('add_4', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('add_5', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-10">
-							<?php echo $this -> Form -> input('add_6', array('class' => "form-control")); ?>
-						</div>
-					</div>
-					
-			  </div>
-			  <div class="modal-footer view_contact view_stuff" style="display: none;">
-				<button type="button" class="btn btn-default" data-dismiss="modal">
-					Close
-				</button>
-				<input type="submit" class="btn btn-primary" value="Save">
-				</form>
-			</div>
-			  
-			  
-			  <div class="view_job view_stuff">
-			       <?php echo $this->Form->create('Event',array('id'=>'event_detail','url'=>array('controller'=>'Events','action'=>'add')))?>
-						<span id="customer_form_msg"> </span>
-						
-						<div class="form-group">
-							<div class="col-sm-10">
-								<?php echo $this -> Form -> input('event_type',array('class'=>"form-control")); ?>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-10">
-								<?php echo $this -> Form -> input('description',array('class'=>"form-control")); ?>
-							</div>
-						</div>
-			  </div>	
-		</div>
-			<div class="modal-footer view_job view_stuff" style="display: none;">
-				<button type="button" class="btn btn-default" data-dismiss="modal">
-					Close
-				</button>
-				<input type="submit" class="btn btn-primary" value="Save">
-				</form>
-			</div>
-			
-		</div>
-	</div>
-</div>
-<!------------------------------------------Contact add form(Modal Window)------------------------------------------------------->
+
+<?php echo $this->element('add_form');?>
 <!------------------------------------------Customer information(Modal Window)------------------------------------------------------->
 <!-- Button trigger modal -->
 <!-- Modal -->
@@ -231,21 +92,32 @@
 								<?php echo $this -> form -> input('Job.description', array('type' => 'textarea', 'label' => false, 'class' => 'form-control required')); ?>
 							</div>
 						</div>
+						<div class="form-group row cost_box" style="display:none;" class="cost_box">
+							<label class="col-xs-3 control-label" for="TextArea">Cost</label>
+							<div class="col-xs-9">
+								<?php echo $this -> form -> input('Job.cost', array('type' => 'text', 'label' => false, 'class' => 'form-control required')); ?>
+							</div>
+						</div>	
 						<div class="form-group row">
-
-							<div class="col-xs-4">
-								<?php echo $this -> Form -> input('Job.user_id', array('type' => 'select', 'empty' => __('Employee'), 'class' => 'selectsearch required', 'options' => $employee, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+                           <div class="col-xs-4">
+								<label>Task
+								<input type="checkbox" class="task_check">
 							</div>
+						
 							<div class="col-xs-4">
-								<?php echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+								<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+							    <select name="data[Job][round_id]"  class="selectsearch" data-bind="options: rounds, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
 							</div>
-							<div class="col-xs-4">
-								<input type="reset" class="btn btn-default" value="Reset">
-								<button type="submit" class="btn btn-success">
-									save
-								</button>
-							</div>
+						
+						<div class="col-xs-4">
+							<input type="reset" class="btn btn-default" value="Reset">
+							<button type="submit" class="btn btn-success">
+								save
+							</button>
 						</div>
+						
+						</div>
+						
 						</form>
 						<div class="table-scroll mt40">
 							<table class="table table-bordered">
@@ -293,6 +165,7 @@
 
 								<?php echo $this -> form -> input('Account.service_date', array('type' => 'text', 'label' => false, 'class' => 'form-control required datepicker', 'style' => 'width:50%')); ?>
 							</div>
+							
 						</div>
 
 						<div class="form-group row">
@@ -345,7 +218,8 @@
 </div>
 <!------------------------------------------Customer information(Modal Window)------------------------------------------------------->
 <!-------------------------------------template for customer search resutl----------------------------------------->
-<script id="details" type="text/html">
+<script id="contact_details" type="text/html">
+	<div id="ScrollBox"   data-bind="foreach: name" style="border:1px solid;">
     <div class="user-info-list"  data-bind="click:function(){get_user_info($data.id)}">
 						<a> <span data-bind="text:created" class="post-time"></span> <h4><span data-bind="text:first_name"></span><span data-bind="text:last_name"></span></h4>
 						<p class="discript" >
@@ -354,19 +228,25 @@
 						</p> </a>
 						
 					</div>
+	<div>				
 </script>
 <!-------------------------------------template for customer search resutl----------------------------------------->
 <!-------------------------------------template for global search resutl----------------------------------------->
 
 <script id="query_result" type="text/html">
-    <div class="user-info-list"">
+	<div id="ScrollBox"   data-bind="foreach: name" style="border:1px solid;">
+    <div class="user-info-list" data-bind="click:function(){click_on_search($data.id}">
 						<a>  <h4><span data-bind="text:name"></span></h4>
 						<p class="discript" >
-							<span data-bind="text:type"></span>
+							
 							<span data-bind="text:email"></span>
 						</p> </a>
 						
-					</div>
+	</div>
+	</div>				
 </script>
-<!-------------------------------------template for global search resutl----------------------------------------->
+
+
+
+
 

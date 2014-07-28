@@ -38,11 +38,7 @@ class Job extends AppModel {
 				'rule' => array('naturalnumber'),
 			),
 		),
-		'user_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-			),
-		),
+		
 		'description' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
@@ -109,7 +105,7 @@ class Job extends AppModel {
 		$event=array('Event'=>array(
 		'event_type'=>"Add job",
 		'customer_id'=>$this->data['Job']['customer_id'],
-		'user_id'=>$this->data['Job']['user_id'],
+		//'user_id'=>$this->data['Job']['user_id'],
 		'description'=>$this->data['Job']['subject'],
 		));
 		$obj->save($event);

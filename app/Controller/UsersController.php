@@ -381,6 +381,7 @@ class UsersController extends AppController {
 		  $this->loadModel('CustomerType'); 
 		  $customer_type=$this->CustomerType->find('list',array('id','name'));
 		  $employee=$this->User->find('list',array('conditions'=>array('User.group_id'=>2),'fields'=>array('id','username')));
+		  
 		  $this->set(compact('customer_type','employee'));	
 	 } 
 	  /**
@@ -396,6 +397,9 @@ class UsersController extends AppController {
 		$referer = array('controller' => 'users', 'action' => 'login');
 		$this->redirect($referer);
 	}
+	
+	
+	
 	 
 	
 }

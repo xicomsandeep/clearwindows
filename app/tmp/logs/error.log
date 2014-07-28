@@ -2995,3 +2995,185 @@ Stack Trace:
 #9 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
 #10 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2014-07-28 06:53:26 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Jobs/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Jobs/add.ctp',
+)
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-28 07:05:15 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Jobs/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Jobs/add.ctp',
+)
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-28 09:22:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(115): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(20): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-28 09:26:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(115): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(163): Model->save(Array)
+#9 [internal function]: JobsController->add_job()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-28 09:27:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(115): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(163): Model->save(Array)
+#9 [internal function]: JobsController->add_job()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-28 10:01:09 Error: [MissingActionException] Action JobsController::round_in_job() could not be found.
+Exception Attributes: array (
+  'controller' => 'JobsController',
+  'action' => 'round_in_job',
+)
+Request URL: /clearwindows/Jobs/round_in_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-28 10:01:24 Error: [MissingActionException] Action JobsController::round_in_job() could not be found.
+Exception Attributes: array (
+  'controller' => 'JobsController',
+  'action' => 'round_in_job',
+)
+Request URL: /clearwindows/Jobs/round_in_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-28 10:17:55 Error: Fatal Error (1): Call to undefined method View::elements() in [/var/www/clearwindows/app/View/Elements/contacts.ctp, line 37]
+2014-07-28 10:17:55 Error: [FatalErrorException] Call to undefined method View::elements()
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/clearw...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/clearw...', 37, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/clearw...', 37, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-28 11:01:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(115): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(20): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-28 11:01:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(115): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(20): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-28 11:02:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(111): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(20): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-28 11:03:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(111): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(20): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

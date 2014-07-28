@@ -132,7 +132,42 @@ class JobsController extends AppController {
 	
  }
  
+   /**
+ * Purpose:round_list
+ * created on:28 july 2014
+ * created by:Abhishek Tripathi
+ */ 
+ public function rounds(){
+ 	$this->loadModel('Round');
+ 	$rounds=array();
+	$rounds=$this->Round->find('all',array('fields'=>array('id','name')));
+    foreach($rounds as $round){
+    	$ro[]=$round['Round'];
+    }
+	$res=response_arr('Successfully added',0,$ro);
+			echo json_encode($res);
+			exit;
+ }
  
+  /**
+ * Purpose:add job individual
+ * created on:28 july 2014
+ * created by:Abhishek Tripathi
+ */ 
+  
+   public function add_job()
+  {
+  	if($this->request->is('Post'))
+	{
+		
+		if($this->Job->save($this->request->data))
+		{
+			$res=response_arr('Successfully added',0,$this->request->data["Job"]['customer_id']);
+			echo json_encode($res);
+			exit;
+		}
+	}
+  }
   
 
 }

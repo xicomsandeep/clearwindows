@@ -55,6 +55,22 @@ $(document).ready(function() {
 			});
 		}
 	});
+	
+		//-------------------------add JOb----------------------------
+
+	$('#job_form').validate({
+
+		submitHandler : function(form) {
+			$('#job_form').ajaxSubmit({
+				success : function(d) {
+					var data = JSON.parse(d);
+					if (data.error == 0) {
+						//get_user_info(data.list);
+					}
+				}
+			});
+		}
+	});
 
 	//-------------------------Event information----------------------------
 
@@ -102,6 +118,8 @@ $(document).ready(function() {
 			});
 		}
 	});
+	
+	
 	//---------------------data binding-------------------------------------
 	// bind view model to html
 	ko.applyBindings(viewModel);
@@ -120,7 +138,8 @@ $(document).ready(function() {
 	//get funtion for all job list
 	all_job_list();
 	// f=get function for all rounds
-	//all_round();
+	all_round();
+	job_count_round();
 	
 	$(".selectsearch").select2();
 	//purpose:open modal window for contacts infomation
@@ -132,11 +151,16 @@ $(document).ready(function() {
   //created on:16 july 2014
   //created by:Abhishek Tripathi
 	$('.nav_baar').on('click',function(){
+		
+		
 	  	var section=$(this).attr('rel');
 	  	$('.middle-sec').hide();
-	    	viewModel.temp('details');
-	    	data();
+	    	
+	    	
+	    	
 	  	$('.'+section+'_middle_section').show();
+	  	viewModel.temp(section+'_details');
+	  	data();
 	});
 		
   //purpose:click event on view selection on add form
@@ -149,30 +173,43 @@ $(document).ready(function() {
 	  		$('.view_container').hide();
 	  		$('.back_btn').show();
 	  		$('.'+view).show();
-	  		
 	  	}
-	  	
 	  });
 	  
-	  
+	  //purpose:click event on taske check box
+	  //created on:28 july 2014
+	  //created by:Abhishek Tripathi 
+	 $('.task_check').on('click',function(){
+	 
+	 	if($(this).is(':checked')){
+	 	$('.cost_box').show();	
+	 	}
+	 	else{
+	 		$('.cost_box').hide();
+	 		$('.cost_input').val('');
+	 	}
+	 	
+	 }); 
 	
 });
 
 //---------------------------------------------knockout-------------------------------------
 
 function data() {
-		viewModel.temp('details');
 	$.post(siteurl + 'Customers/get_data', function(d) {
 		var data = JSON.parse(d);
 		var parsed = JSON.parse(d);
+		viewModel.customer_list(parsed.list);
 		viewModel.name(parsed.list);
 	});
+	
 }
 
 // ------------------View model for data binding-------------------------------
 var viewModel = {
 	//---------------------contact section-----------------------------------------
 	name : ko.observable(),
+	customer_list:ko.observable(),
 	query : ko.observable(''),
 	user_info : ko.observable(),
 	customer_job : ko.observable(),
@@ -180,6 +217,7 @@ var viewModel = {
 	event_log_query:ko.observable(),
     customer_account_list:ko.observable(),
     work_space_template:ko.observable('detail'),
+    customer_detail:ko.observable(),
     //-------------------------------event section---------------------------------
 	events:ko.observable(),	
 	event_log:ko.observable(),
@@ -188,8 +226,12 @@ var viewModel = {
 	all_job_list:ko.observable(),
     job_query:ko.observable(''),
     job_detail:ko.observable(),
-    //------------------------------------------------------------------------------
-    temp:ko.observable('details'),
+    //--------------------------------round section----------------------------------------------
+    rounds:ko.observable(),
+    round_list:ko.observable(),
+    
+      
+    temp:ko.observable('contact_details'),
 	incrementClickCounter : function() {
 
 	},
@@ -228,7 +270,7 @@ function data_filter(value) {
 //created by:Abhishek Tripathi
 //created on:4 july 2014
 function get_user_info(value) {
-
+     
 	$('#myModal_customer_info').modal('show');
 	//$('#myTab a:first').tab('show');
 	$.post(siteurl + 'Customers/get_user_info', {
@@ -400,14 +442,42 @@ function open_form(){
 //Purpose:function for get round and there jobs
 //created by:Abhishek Tripathi
 //created on:22 july 2014
-function round(){
-  $.post(siteurl + 'Jobs/get_job_list', function(d) {
+function all_round(){
+  $.post(siteurl + 'Jobs/rounds', function(d) {
 		var data = JSON.parse(d);
 		var parsed = JSON.parse(d);
-		viewModel.job(parsed.list);
+		viewModel.rounds(parsed.list);
 	});
   	
 }
+
+//Purpose:function for get job count in round
+//created by:Abhishek Tripathi
+//created on:22 july 2014
+function job_count_round(){
+  $.post(siteurl + 'Rounds/round_in_job', function(d) {
+		var data = JSON.parse(d);
+		var parsed = JSON.parse(d);
+		viewModel.round_list(parsed.list);
+	});
+  	
+}
+//Purpose:get customer detail on global search resutl
+//created by:Abhishek Tripathi
+//created on:28 july 2014
+function click_on_search(id){
+	
+	switch('Customer'){
+		case 'Customer': 
+		get_user_info(id);
+		break;
+		
+		case 'Job':get_job_detail(id);
+		
+		break;
+	}
+}
+
 
 
  

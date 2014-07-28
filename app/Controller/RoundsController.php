@@ -26,6 +26,27 @@ class RoundsController extends AppController {
 	}
  }
  
+ /**
+ * Purpose:job list in a round
+ * created on:28 july 2014
+ * created by:Abhishek Tripathi
+ */
+ 
+ public function round_in_job(){
+ 	$rounds=array();
+	$this->Round->recursive=1;
+	$round_list=$this->Round->find('all');
+	foreach($round_list as $round){
+		$rounds[]=array(
+		  'name'=>$round['Round']['name'],
+		  'count'=>count($round['Job'])
+		);
+	}
+	
+	$res=response_arr('Successfully added',0,$rounds);
+			echo json_encode($res);
+			exit;
+ }
   
 
 }
