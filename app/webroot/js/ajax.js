@@ -152,15 +152,12 @@ $(document).ready(function() {
   //created by:Abhishek Tripathi
 	$('.nav_baar').on('click',function(){
 		
-		
+		data();
 	  	var section=$(this).attr('rel');
 	  	$('.middle-sec').hide();
-	    	
-	    	
-	    	
-	  	$('.'+section+'_middle_section').show();
+	    $('.'+section+'_middle_section').show();
+	  
 	  	viewModel.temp(section+'_details');
-	  	data();
 	});
 		
   //purpose:click event on view selection on add form
@@ -182,13 +179,35 @@ $(document).ready(function() {
 	 $('.task_check').on('click',function(){
 	 
 	 	if($(this).is(':checked')){
-	 	$('.cost_box').show();	
+	 	var box=$(this).attr('rel');
+	 	if(box=="make_job_container"){
+	 		$('.make_job').show();
+	 	}
+	 	if(box=="make_task_container")
+	 	{
+	 		$('.task_input').show();
+	 	}
 	 	}
 	 	else{
-	 		$('.cost_box').hide();
-	 		$('.cost_input').val('');
+	 	var box=$(this).attr('rel');
+	 		if(box=="make_job_container"){
+	 		$('.job_input').hide().find('input').val('');
+	 		if($('.task_check_box').is(':checked')){
+	 			$('.task_input').show();
+	 		}
+	 		else{
+	 			$('.task_input').hide().find('input').val('');
+	 		}
 	 	}
-	 	
+	 		if(box=="make_task_container"){
+	 		if($('.job_check').is(':checked')){
+	 			
+	 		}
+	 		else{
+	 			$('.make_job').hide().find('input').val('');
+	 		}	
+	 		}
+	 	}
 	 }); 
 	
 });
@@ -239,7 +258,7 @@ var viewModel = {
 
 	},
 	search : function(value) {
-		viewModel.temp('query_result');
+		
 		data_filter(value);
 	},
 	event_search : function(value) {
@@ -263,7 +282,9 @@ function data_filter(value) {
 	}, function(d) {
 		var data = JSON.parse(d);
 		var parsed = JSON.parse(d);
-		viewModel.name(parsed.list);
+	
+		viewModel.temp('query_result');
+			viewModel.name(parsed.list);
 	});
 }
 //Purpose:get customer detail
@@ -465,9 +486,9 @@ function job_count_round(){
 //Purpose:get customer detail on global search resutl
 //created by:Abhishek Tripathi
 //created on:28 july 2014
-function click_on_search(id){
+function click_on_search(type,id){
 	
-	switch('Customer'){
+	switch(type){
 		case 'Customer': 
 		get_user_info(id);
 		break;

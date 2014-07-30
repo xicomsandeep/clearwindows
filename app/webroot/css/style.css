@@ -128,3 +128,8 @@ ul li { list-style:none;}
 .view_contact{display: none;}
 .view_job{display: none;}
 .back_btn{display:none;cursor:pointer;}
+/*30 july 2014*/
+.make_job{display:none;}
+.make_job label{color:#374769;}
+.checkbox label{color:#374769;}
+

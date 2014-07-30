@@ -16,6 +16,18 @@ class JobsController extends AppController {
   {
   	if($this->request->is('Post'))
 	{
+		if(empty($this->request->data['Job']['cost'])){
+			$this->request->data['Job']['cost']=0;
+		}
+		if(empty($this->request->data['Job']['fixed'])){
+			$this->request->data['Job']['fixed']=0;
+		}
+		if(empty($this->request->data['Job']['monthly'])){
+			$this->request->data['Job']['monthly']=0;
+		}
+		if(empty($this->request->data['Job']['weekly'])){
+			$this->request->data['Job']['weekly']=0;
+		}
 		
 		if($this->Job->save($this->request->data))
 		{
