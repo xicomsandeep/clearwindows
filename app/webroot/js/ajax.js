@@ -137,9 +137,13 @@ $(document).ready(function() {
 	events();
 	//get funtion for all job list
 	all_job_list();
+	job_type();
 	// f=get function for all rounds
 	all_round();
 	job_count_round();
+	// get function for account list
+	all_account_list();
+	
 	
 	$(".selectsearch").select2();
 	//purpose:open modal window for contacts infomation
@@ -245,9 +249,12 @@ var viewModel = {
 	all_job_list:ko.observable(),
     job_query:ko.observable(''),
     job_detail:ko.observable(),
+    job_type:ko.observable(),
     //--------------------------------round section----------------------------------------------
     rounds:ko.observable(),
     round_list:ko.observable(),
+    //--------------------------------account section-------------------------------------------
+    account_list:ko.observable(),
     
       
     temp:ko.observable('contact_details'),
@@ -498,7 +505,27 @@ function click_on_search(type,id){
 		break;
 	}
 }
+//Purpose:get customer account list 
+//created by:Abhishek Tripathi
+//created on:4 august 2014
 
+function all_account_list(){
+	  $.post(siteurl + 'Accounts/account_list', function(d) {
+		var data = JSON.parse(d);
+		var parsed = JSON.parse(d);
+		viewModel.account_list(parsed.list);
+	});
+}
 
+//Purpose:get account list
+//created by:Abhishek Tripathi
+//created on:4 august 2014
+function job_type(){
+	$.post(siteurl + 'JobTypes/job_type_list', function(d) {
+		var data = JSON.parse(d);
+		var parsed = JSON.parse(d);
+		viewModel.job_type(parsed.list);
+	});
+}
 
  

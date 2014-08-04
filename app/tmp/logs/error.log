@@ -3469,3 +3469,181 @@ Stack Trace:
 #8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
 #9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-08-04 11:00:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'job_id' cannot be null
+Request URL: /clearwindows/Accounts/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Account), Array, Array)
+#4 /var/www/clearwindows/app/Controller/AccountsController.php(20): Model->save(Array)
+#5 [internal function]: AccountsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(AccountsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-04 12:09:17 Error: [MissingControllerException] Controller class JobtypesController could not be found.
+Exception Attributes: array (
+  'class' => 'JobtypesController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/admin/Jobtypes/index
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-04 12:17:36 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/JobTypes/admin_add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/JobTypes/admin_add.ctp',
+)
+Request URL: /clearwindows/admin/JobTypes/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-04 12:18:40 Error: Fatal Error (1): Call to undefined method JobTypesController::autoRender() in [/var/www/clearwindows/app/Controller/JobTypesController.php, line 24]
+2014-08-04 12:18:40 Error: [FatalErrorException] Call to undefined method JobTypesController::autoRender()
+Request URL: /clearwindows/admin/JobTypes/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/clearw...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/clearw...', 24, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/clearw...', 24, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-04 12:19:05 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/JobTypes/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/JobTypes/edit.ctp',
+)
+Request URL: /clearwindows/admin/JobTypes/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName('edit')
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render('edit', NULL)
+#2 /var/www/clearwindows/app/Controller/JobTypesController.php(25): Controller->render('edit')
+#3 [internal function]: JobTypesController->admin_add()
+#4 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#5 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-04 12:19:12 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/JobTypes/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/JobTypes/edit.ctp',
+)
+Request URL: /clearwindows/admin/JobTypes/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName('edit')
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render('edit', NULL)
+#2 /var/www/clearwindows/app/Controller/JobTypesController.php(25): Controller->render('edit')
+#3 [internal function]: JobTypesController->admin_add()
+#4 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#5 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-04 12:19:22 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/JobTypes/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/JobTypes/edit.ctp',
+)
+Request URL: /clearwindows/admin/JobTypes/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName('edit')
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render('edit', NULL)
+#2 /var/www/clearwindows/app/Controller/JobTypesController.php(25): Controller->render('edit')
+#3 [internal function]: JobTypesController->admin_add()
+#4 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#5 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-04 12:32:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Job.job_type_id' in 'field list'
+Request URL: /clearwindows/admin/JobTypes
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Job`.`i...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Job`.`i...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1342): DboSource->fetchAll('SELECT `Job`.`i...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1204): DboSource->fetchAssociated(Object(JobType), 'SELECT `Job`.`i...', Array)
+#5 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(JobType), Object(Job), 'hasMany', 'Job', Array, Array, true, Array, 0, Array)
+#6 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(JobType), Array)
+#7 /var/www/clearwindows/lib/Cake/Controller/Component/PaginatorComponent.php(197): Model->find('all', Array)
+#8 /var/www/clearwindows/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate(NULL, Array, Array)
+#9 /var/www/clearwindows/app/Controller/JobTypesController.php(39): Controller->paginate()
+#10 [internal function]: JobTypesController->admin_index()
+#11 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-04 12:33:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+Request URL: /clearwindows/admin/JobTypes
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('paginate', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('paginate', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('paginate', Array, Array)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(800): DboSource->query('paginate', Array, Object(JobType))
+#5 /var/www/clearwindows/app/Controller/JobTypesController.php(39): Model->__call('paginate', Array)
+#6 /var/www/clearwindows/app/Controller/JobTypesController.php(39): JobType->paginate()
+#7 [internal function]: JobTypesController->admin_index()
+#8 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#9 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-04 12:34:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Job.job_type_id' in 'field list'
+Request URL: /clearwindows/admin/JobTypes
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Job`.`i...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Job`.`i...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1342): DboSource->fetchAll('SELECT `Job`.`i...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1204): DboSource->fetchAssociated(Object(JobType), 'SELECT `Job`.`i...', Array)
+#5 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1115): DboSource->queryAssociation(Object(JobType), Object(Job), 'hasMany', 'Job', Array, Array, true, Array, 0, Array)
+#6 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(JobType), Array)
+#7 /var/www/clearwindows/lib/Cake/Controller/Component/PaginatorComponent.php(197): Model->find('all', Array)
+#8 /var/www/clearwindows/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate(NULL, Array, Array)
+#9 /var/www/clearwindows/app/Controller/JobTypesController.php(39): Controller->paginate()
+#10 [internal function]: JobTypesController->admin_index()
+#11 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-04 12:54:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Timeline.desc' in 'where clause'
+Request URL: /clearwindows/admin/JobTypes?name=room
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `JobType...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `JobType...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `JobType...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(JobType), Array)
+#5 /var/www/clearwindows/lib/Cake/Controller/Component/PaginatorComponent.php(197): Model->find('all', Array)
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate('JobType', Array, Array)
+#7 /var/www/clearwindows/app/Controller/JobTypesController.php(48): Controller->paginate('JobType', Array)
+#8 [internal function]: JobTypesController->admin_index()
+#9 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#10 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-04 12:55:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JobType.desc' in 'where clause'
+Request URL: /clearwindows/admin/JobTypes?name=room
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `JobType...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `JobType...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `JobType...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(JobType), Array)
+#5 /var/www/clearwindows/lib/Cake/Controller/Component/PaginatorComponent.php(197): Model->find('all', Array)
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(1074): PaginatorComponent->paginate('JobType', Array, Array)
+#7 /var/www/clearwindows/app/Controller/JobTypesController.php(48): Controller->paginate('JobType', Array)
+#8 [internal function]: JobTypesController->admin_index()
+#9 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobTypesController), Array)
+#10 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}

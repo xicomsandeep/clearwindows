@@ -55,14 +55,15 @@ class Account extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
+		
+		'Customer'=>array(
+		   'className'=>'Customer',
+		    'foreignKey'=>'customer_id'
+		),
 		'Job' => array(
 			'className' => 'Job',
 			'foreignKey' => 'job_id'
 			
-		),
-		'Customer'=>array(
-		   'className'=>'Customer',
-		    'foreignKey'=>'customer_id'
 		)
 	);
 }

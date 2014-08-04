@@ -40,11 +40,9 @@ class AccountsController extends AppController {
 		$accounts=array();  
 		$id=$this->request->data['customer_id'];
 		$accounts=$this->Account->find('all',array('conditions'=>array('Account.customer_id'=>$id)));
-		
-		  $res=response_arr('Successfully added',0,$accounts);
+		$res=response_arr('Successfully added',0,$accounts);
 			echo json_encode($res);
 			exit;	
-		
 	}
   }  
 /**
@@ -60,12 +58,24 @@ class AccountsController extends AppController {
 	$this->Account->Delete($account_id);
   	$jobs=array();
 	$jobs=$this->Account->find('all',array('conditions'=>array('Account.customer_id'=>$customer_id)));
-	//debug($job_list);exit;
-    $res=response_arr('Successfully added',0,$jobs);
+	$res=response_arr('Successfully added',0,$jobs);
 			echo json_encode($res);
 			exit;
-	
-  } 
+	} 
+  
+  /**
+ * Purpose:delete account history
+ * created on:4 august 2014
+ * created by:Abhishek Tripathi
+ */
+ public function account_list(){
+ 	$accounts=array();
+	$this->Account->recursive=0;
+	$accounts=$this->Account->find('all');
+	$res=response_arr('Successfully added',0,$accounts);
+			echo json_encode($res);
+			exit;
+ }
 
 
 

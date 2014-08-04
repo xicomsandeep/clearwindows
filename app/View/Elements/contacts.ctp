@@ -90,6 +90,13 @@
 						    </label>
 						 </div>
 						<div class="form-group row">
+								<label class="col-xs-3 control-label" for="TextArea">Job Type</label>
+	                          <div class="col-xs-4">
+									<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+								    <select name="data[Job][job_types_id]"  class="selectsearch required" data-bind="options: job_type, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+								</div>
+							</div> 
+						<div class="form-group row">
 							<label class="col-xs-3 control-label" for="inputEmail1">Subject</label>
 							<div class="col-xs-9" data-bind="foreach:user_info">
 								

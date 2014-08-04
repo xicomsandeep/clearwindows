@@ -36,7 +36,10 @@
 					</ul>
 				</div>
 			</li>
-		
+		   <li onmouseout="this.className=''" onmouseover="this.className='hov'">
+				<?php echo $this->Html->link('Manage Job Type', array('controller' => 'JobTypes', 'action' => 'admin_index')); ?>
+				
+			</li>
 					
 			
 			<li onmouseout="this.className=''" onmouseover="this.className='hov'">
