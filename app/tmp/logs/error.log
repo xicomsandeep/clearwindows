@@ -3647,3 +3647,68 @@ Stack Trace:
 #11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobTypesController), Object(CakeRequest), Object(CakeResponse))
 #12 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-08-05 10:57:01 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/clearwindows/app/Model/Job.php, line 106]
+2014-08-05 10:57:01 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/clearw...', 106)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/clearw...', 106, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/clearw...', 106, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 10:57:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Customer.first-name' in 'field list'
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Custome...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Custome...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Custome...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Customer), Array)
+#5 /var/www/clearwindows/app/Model/Job.php(106): Model->find('first', Array)
+#6 [internal function]: Job->afterSave(true, Array)
+#7 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#8 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#10 [internal function]: JobsController->add()
+#11 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-05 11:37:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/delete_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(131): Model->save(Array)
+#5 [internal function]: Job->beforeDelete(true)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(2399): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(68): Model->delete('28')
+#9 [internal function]: JobsController->delete_job()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-05 11:39:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/delete_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(132): Model->save(Array)
+#5 [internal function]: Job->beforeDelete(true)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(2399): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(68): Model->delete('28')
+#9 [internal function]: JobsController->delete_job()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

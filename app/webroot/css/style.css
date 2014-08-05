@@ -122,7 +122,7 @@ ul li { list-style:none;}
 #header h1 a{ text-decoration: none;}
 #ScrollBox {   overflow-y: scroll;border: 0px solid #ccc!important;padding:20px;height: 400px;}
 .table-scroll{ max-height: 167px; overflow: auto;}
-.event_log_ui{overflow-y: auto;border: 0px solid #ccc!important;max-height: 250px;}
+.event_log_ui{overflow-y: auto;border: 0px solid #ccc!important;max-height: 205px;}
 
 /*16 july 2014*/
 .view_contact{display: none;}

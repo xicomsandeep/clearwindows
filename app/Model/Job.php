@@ -54,9 +54,10 @@ class Job extends AppModel {
 	{
 		$condition=array();    
 		if(isset($id)){
-			$condition=array(
-			 'Job.customer_id'=>$id
-			);
+			$condition=array('AND'=>array(
+			 'Job.customer_id'=>$id,
+			 'Job.cost <>'=>0
+			));
 		} 
 		$this->recursive=2;  
 		$jobs=$this->find('all',array('conditions'=>$condition,'fields'=>array('id','subject','description','created'),'contain'=>$this->contain,'order' => array(
@@ -102,24 +103,32 @@ class Job extends AppModel {
 	// aftersave function for manage event log-----------------------
 	public function afterSave($created,$options = array()){
 	    $obj = ClassRegistry::init('Event');
+		$customer = ClassRegistry::init('Customer');
+		$customer_detail=$this->Customer->find('first',array('conditions'=>array('Customer.id'=>$this->data['Job']['customer_id']),'fields'=>array('first_name','last_name')));
 		$event=array('Event'=>array(
-		'event_type'=>"Add job",
+		'event_type'=>($this->data['Job']['cost']==0)?"Add Task":"Add Job",
 		'customer_id'=>$this->data['Job']['customer_id'],
-		//'user_id'=>$this->data['Job']['user_id'],
+		'customer_name'=>$customer_detail['Customer']['first_name'].' '.$customer_detail['Customer']['last_name'],
 		'description'=>$this->data['Job']['subject'],
+		'job_id'=>$this->getLastInsertID()
 		));
 		$obj->save($event);
 	}
 	
 	// beforedelete function for manage event log---------------------
 	public function beforeDelete($cascade = true){
-		$job=$this->find('first',array('condition'=>array('Job.id'=>$this->id)));
+		
+		$job=$this->find('first',array('conditions'=>array('Job.id'=>$this->id)));
+		$customer = ClassRegistry::init('Customer');
+		$customer_detail=$this->Customer->find('first',array('conditions'=>array('Customer.id'=>$job['Job']['customer_id']),'fields'=>array('first_name','last_name')));
+		
 		 $obj = ClassRegistry::init('Event');
 		$event=array('Event'=>array(
-		'event_type'=>"Delete task",
+		'event_type'=>($job['Job']['cost']==0)?"Delete Task":"Delete Job",
 		'customer_id'=>$job['Job']['customer_id'],
 		'user_id'=>$job['Job']['user_id'],
 		'description'=>$job['Job']['subject'],
+		'customer_name'=>$customer_detail['Customer']['first_name'].' '.$customer_detail['Customer']['last_name'],
 		));
 		$obj->save($event);
 		

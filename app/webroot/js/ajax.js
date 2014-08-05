@@ -118,6 +118,35 @@ $(document).ready(function() {
 			});
 		}
 	});
+	//------------------------------form quick note-----------------------------------
+	$('#qucik_note').validate({
+
+		submitHandler : function(form) {
+			$('#qucik_note').ajaxSubmit({
+				success : function(d) {
+					var data = JSON.parse(d);
+					if (data.error == 0) {
+						
+					}
+				}
+			});
+		}
+	});
+	
+	//------------------------------form quick task-----------------------------------
+	$('#qucik_task').validate({
+
+		submitHandler : function(form) {
+			$('#qucik_task').ajaxSubmit({
+				success : function(d) {
+					var data = JSON.parse(d);
+					if (data.error == 0) {
+						
+					}
+				}
+			});
+		}
+	});
 	
 	
 	//---------------------data binding-------------------------------------

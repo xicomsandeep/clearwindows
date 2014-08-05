@@ -31,7 +31,7 @@ $cakeDescription = __d('Clear Window', 'Clear Window');
 	<?php
 		echo $this->Html->meta('icon');
         echo $this->Html->css(array('bootstrap','font-awesome','bootstrap-select.min','style','responsive','jquery-ui','select2/select2','datepicker'));
-		echo $this->Html->script(array('jquery-1.11.0.min','jquery.form.min','jquery.validate','jquery-ui.custom.min','bootstrap.min','bootstrap-select.min','knockout-3.1.0','ajax','select2/select2','bootstrap-datepicker','underscore'));
+		echo $this->Html->script(array('jquery-1.11.0.min','jquery.form.min','jquery.validate','jquery-ui.custom.min','bootstrap.min','bootstrap-select.min','knockout-3.1.0','ajax','select2/select2','bootstrap-datepicker'));
         echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');

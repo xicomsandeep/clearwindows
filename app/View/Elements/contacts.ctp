@@ -81,7 +81,7 @@
 						<?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add'),'id'=>'customer_note'))?>
 						<div class="checkbox">
 						    <label class="control-label">
-						      <input type="checkbox" class="task_check task_check_box" rel="make_task_container"> Make Task
+						      <input type="checkbox" name="data[Job][task]" value="1"  class="task_check task_check_box" rel="make_task_container"> Make Task
 						    </label>
 						 </div>
 						 <div class="checkbox">

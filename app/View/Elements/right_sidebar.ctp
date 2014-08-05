@@ -13,7 +13,10 @@
                                     <input type="text" class="form-control" id="inputEmail" placeholder="keyword" type="event_log_search" class="form-control" data-bind="value: event_log_query, valueUpdate: 'keyup'" autocomplete="off" >
                                       <div class="list-group event_log_ui" data-bind="foreach: event_log" >
 										  
-										  <a href="#" class="list-group-item" data-bind="text:event_type" ></a>
+										  <div href="#" class="list-group-item">
+										  	<span  data-bind="text:event_type,click:function(){get_job_detail($data.job_id)} "></span>
+										  	<span style="font-size: 10px; float:right;color:blue;" data-bind="text:customer_name ,click:function(){get_user_info($data.customer_id)}"></span>
+										  </div>
 										 
 									</div>
                                 </div>
@@ -33,22 +36,37 @@
 
                         </div>
                         <div class="tab-pane" id="note">
-
-                        </div>
-                        <div class="tab-pane active" id="task">
-                            <form>
+                              <?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add'),'id'=>'qucik_note'))?>
                                 <div class="form-group">
-                                    <label for="inputEmail">Date - Time</label>
-                                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                    <label for="inputEmail">Title</label>
+                                    <input type="text" name="data[Job][subject]" class="form-control" id="inputEmail" >
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputPassword">Description</label>
-                                    <input type="text" class="form-control" id="inputPassword" placeholder="">
+                                    <label for="inputPassword">Links</label>
+                                     <select name="data[Job][customer_id]"  class="selectsearch required" data-bind="options: customer_list, optionsText: 'first_name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
                                 </div>
-                                <div class="form-group">
+                               <!-- <div class="form-group">
                                     <label for="inputPassword">Schedule</label>
                                     <textarea  class="form-control" ></textarea>
-                                </div>                                
+                                </div> -->                               
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane active" id="task">
+                             <?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add'),'id'=>'qucik_task'))?>
+                                <div class="form-group">
+                                    <label for="inputEmail">Title</label>
+                                    <input type="text" name="data[Job][subject]" class="form-control" id="inputEmail" >
+                                     <input type="hidden" name="data[Job][task]" value="1" class="form-control" id="inputEmail" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Links</label>
+                                     <select name="data[Job][customer_id]"  class="selectsearch required" data-bind="options: customer_list, optionsText: 'first_name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+                                </div>
+                               <!-- <div class="form-group">
+                                    <label for="inputPassword">Schedule</label>
+                                    <textarea  class="form-control" ></textarea>
+                                </div> -->                               
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>                       
