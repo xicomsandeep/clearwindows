@@ -144,11 +144,18 @@
 								</div>
 							</div>
 							<div class="form-group row make_job job_input" >
+								<label class="col-xs-3 control-label" for="TextArea">Round Position</label>
+								<div class="col-xs-9">
+									<?php echo $this -> form -> input('Job.round_position', array('type' => 'text', 'label' => false, 'class' => 'form-control required')); ?>
+								</div>
+							</div>
+							<div class="form-group row make_job job_input" >
 								<label class="col-xs-3 control-label" for="TextArea">Service charge</label>
 								<div class="col-xs-9">
 									<?php echo $this -> form -> input('Job.cost', array('type' => 'text', 'label' => false, 'class' => 'form-control required')); ?>
 								</div>
 							</div>
+							
 						</div>
 						<!------------------------------------------------------------------------------------------------------------------------------------------------->
 						<div class="form-group row">

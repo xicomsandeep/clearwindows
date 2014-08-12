@@ -97,6 +97,21 @@ class Job extends AppModel {
         'Job.created' => 'desc')));
 		return $jobs;
 	 }
+	 
+	 public function get_all_task(){
+		$condition=array();    
+		
+			$condition=array('AND'=>array(
+			 'Job.task '=>1,
+			 'Job.cost '=>0
+			));
+	
+		$this->recursive=2;  
+		$jobs=$this->find('all',array('conditions'=>$condition,'fields'=>array('id','subject','description','created'),'contain'=>$this->contain,'order' => array(
+        'Job.created' => 'desc'
+    )));
+		return $jobs;	
+	 }
 
 
 
@@ -113,6 +128,14 @@ class Job extends AppModel {
 		'job_id'=>$this->getLastInsertID()
 		));
 		$obj->save($event);
+		
+		$schedule=ClassRegistry::init('Schedule');
+		$data=array('Schedule'=>array(
+		'round_id'=>$this->data['Job']['round_id'],
+		'job_id'=>$this->getLastInsertID(),
+		'round_position'=>$this->data['Job']['round_position']
+		));
+		$schedule->save($data);
 	}
 	
 	// beforedelete function for manage event log---------------------

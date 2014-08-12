@@ -181,5 +181,17 @@ class JobsController extends AppController {
 	}
   }
   
+  /**
+ * Purpose:get all task list
+ * created on:12 august 2014
+ * created by:Abhishek Tripathi
+ */ 
+  public function task_list(){
+  	$jobs=array();
+	$jobs=$this->Job->get_all_task();
+	$res=response_arr('Successfully added',0,$jobs);
+			echo json_encode($res);
+			exit;
+  }
 
 }

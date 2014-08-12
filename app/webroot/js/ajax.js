@@ -167,11 +167,14 @@ $(document).ready(function() {
 	//get funtion for all job list
 	all_job_list();
 	job_type();
-	// f=get function for all rounds
+	// fget function for all rounds
 	all_round();
 	job_count_round();
 	// get function for account list
 	all_account_list();
+	
+	// get task list 
+	all_task_list();
 	
 	
 	$(".selectsearch").select2();
@@ -285,6 +288,8 @@ var viewModel = {
     //--------------------------------account section-------------------------------------------
     account_list:ko.observable(),
     
+    //------------------------------------task section--------------------------------------
+    task_list:ko.observable(),
       
     temp:ko.observable('contact_details'),
 	incrementClickCounter : function() {
@@ -554,6 +559,18 @@ function job_type(){
 		var data = JSON.parse(d);
 		var parsed = JSON.parse(d);
 		viewModel.job_type(parsed.list);
+	});
+}
+
+//Purpose:get task list 
+//created by:Abhishek Tripathi
+//created on:12 august 2014
+
+function all_task_list(){
+	  $.post(siteurl + 'Jobs/task_list', function(d) {
+		var data = JSON.parse(d);
+		var parsed = JSON.parse(d);
+		viewModel.task_list(parsed.list);
 	});
 }
 
