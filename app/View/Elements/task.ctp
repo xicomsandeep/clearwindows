@@ -1,11 +1,11 @@
 <div class="middle-sec task_middle_section" style="display: none;">
 	<h1 class="left-arrow">Workspace</h1>
 	<div class="middle-body">
-		<div class="breadcum-wrap col-xs-6">
-			<ol class="breadcrumb">
+		<div class="breadcum-wrap col-xs-3">
+			<ol class="breadcrumb mt10">
 				<li>
 					<a href="#">Home</a>
-					
+
 				</li>
 				<li>
 					<a href="#">Task</a>
@@ -13,10 +13,13 @@
 			</ol>
 		</div>
 		<div class="col-xs-6">
+			<input type="search" class="form-control mt10" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
+		</div>
+		<div class="col-xs-3">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" type="text" />
-					<button type="button" id="form-button" class="btn btn-success" data-toggle="modal" data-target="#myModal_event">
+					
+					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>
 				</div>

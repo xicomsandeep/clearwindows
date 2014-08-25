@@ -574,4 +574,30 @@ function all_task_list(){
 	});
 }
 
+//Purpose:delete global search result 
+//created by:Abhishek Tripathi
+//created on:25 august 2014
+
+function delete_search_result(type,id){
+	
+	 var arr_result=viewModel.name();
+	 for(var i=0;i<arr_result.length;i++){
+	 	if(arr_result[i]['type']==type && arr_result[i]['id']==id){
+	 		arr_result.splice(i,1);
+	 	}
+	 	
+	 }
+
+     viewModel.name(arr_result);
+	 $.post(siteurl + 'Searches/delete_result',{
+	   type:type,id:id
+	  }, function(d) {
+		var data = JSON.parse(d);
+		var parsed = JSON.parse(d);
+		viewModel.task_list(parsed.list);
+	});
+}
+
+
+
  

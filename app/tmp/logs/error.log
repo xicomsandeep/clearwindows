@@ -3748,3 +3748,901 @@ Stack Trace:
 #12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
 #13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2014-08-21 04:20:52 Error: [MissingControllerException] Controller class TestsController could not be found.
+Exception Attributes: array (
+  'class' => 'TestsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/tests
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 04:21:01 Error: [MissingControllerException] Controller class TestsController could not be found.
+Exception Attributes: array (
+  'class' => 'TestsController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/Tests
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 10:07:01 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 10:07:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 10:07:05 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 10:07:05 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 10:07:37 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 10:07:37 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:11:38 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:11:38 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:11:51 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:11:51 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:12:04 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:12:04 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:12:21 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:12:21 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:12:42 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:12:42 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:12:58 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:12:58 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:13:12 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:13:12 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:13:13 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:13:13 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:13:13 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:13:13 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:15:44 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:15:44 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:27:22 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:27:22 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:34 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:34 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:44 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:44 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:47 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:47 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:49 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:49 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:52 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:52 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:52 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:52 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:52 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:52 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:52 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:52 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:53 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:53 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:53 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:53 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:53 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:53 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:54 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:54 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:54 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:54 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:54 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:54 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:54 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:54 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:55 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:55 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:55 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:55 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:55 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:55 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:55 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:55 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:55 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:55 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:56 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:56 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:56 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:56 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:56 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:56 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:56 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:56 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:57 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:57 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:57 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:57 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:57 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:57 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:58 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:58 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:58 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:58 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:58 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:58 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:58 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:58 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:58 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:58 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:59 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:59 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:59 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:59 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:59 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:59 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:59 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:59 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:51:59 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:51:59 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:00 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:00 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:00 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:00 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:00 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:00 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:00 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:00 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:00 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:00 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:01 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:01 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:01 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:01 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:01 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:01 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:02 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:02 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:02 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:02 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:02 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:02 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:02 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:02 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:02 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:02 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:03 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:03 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:03 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:03 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:03 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:03 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:03 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:03 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:03 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:03 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:04 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:04 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:04 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:04 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:04 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:04 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:04 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:04 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:04 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:04 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:05 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:05 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:05 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:05 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:05 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:05 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:05 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:05 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:05 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:05 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:06 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:06 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:06 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:06 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:06 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:06 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:06 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:06 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:08 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:08 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:52:55 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:52:55 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 11:54:12 Error: Fatal Error (1): Cannot access empty property in [/var/www/clearwindows/lib/Cake/Controller/Controller.php, line 433]
+2014-08-25 11:54:12 Error: [FatalErrorException] Cannot access empty property
+Request URL: /clearwindows/Searches/delete_result
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/clearw...', 433)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/clearw...', 433, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

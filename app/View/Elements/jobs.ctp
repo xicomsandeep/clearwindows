@@ -1,22 +1,24 @@
 <div class="middle-sec job_middle_section" style="display: none;">
 	<h1 class="left-arrow">Workspace</h1>
 	<div class="middle-body">
-		<div class="breadcum-wrap col-xs-6">
-			<ol class="breadcrumb">
+		<div class="breadcum-wrap col-xs-3">
+			<ol class="breadcrumb mt10">
 				<li>
 					<a href="#">Home</a>
-					
+
 				</li>
 				<li>
-					<a href="#">Job	</a>
+					<a href="#">Job</a>
 				</li>
 			</ol>
 		</div>
 		<div class="col-xs-6">
+			<input type="search" class="form-control mt10" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
+		</div>
+		<div class="col-xs-3">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					<!--<input type="job_search" class="form-control" data-bind="value: job_query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city"type="text" />-->	
-					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
+					
 					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>

@@ -8,6 +8,7 @@ img { height: auto; max-width: 100%; }
 .mb10 { margin-bottom:10px!important }
 .mb20 { margin-bottom:20px!important }
 .mt20{ margin-top: 20px;}
+.mt10{ margin-top: 10px;}
 .mt40{ margin-top: 40px;}
 .mt70{ margin-top: 70px;}
 .clear { clear: both; }
@@ -98,7 +99,7 @@ ul li { list-style:none;}
 .user-info-list{ display: block; padding: 0 20px 15px; border-bottom: 1px solid #ccc; margin-bottom: 15px; cursor: pointer;}
 .user-info-list a{ text-decoration: none;}
 .user-info-list:last-child{ border-bottom: 0; margin-bottom: 0;}
-.user-info-list h4{ margin-bottom: 5px; font-size: 16px; color: #374866; font-weight: 600;}
+.user-info-list h4{ margin-bottom: 5px; font-size: 16px; color: #374866; font-weight: 600; position: relative;}
 .user-info-list p{ font-size: 14px; margin-bottom: 5px; color: #323335;}
 .post-time{ float: right; color: #323335;}
 .discript span:not(:last-child):after{ content: '|'; margin-left: 8px; padding-right: 5px; position: relative; display: inline-block;}
@@ -133,3 +134,6 @@ ul li { list-style:none;}
 .make_job label{color:#374769;}
 .checkbox label{color:#374769;}
 
+.when-filter.user-info-list h4 input[type="checkbox"]{ left: -22px; margin: 0;  position: absolute; top: 1px;}
+.when-filter .delete-icon i{ color: #AE0000;}
+.when-filter .delete-icon{ position: relative; z-index: 999;}

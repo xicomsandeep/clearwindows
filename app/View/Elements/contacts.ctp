@@ -1,8 +1,8 @@
 <div class="middle-sec contact_middle_section" >
 	<h1 class="left-arrow">Workspace</h1>
 	<div class="middle-body">
-		<div class="breadcum-wrap col-xs-6">
-			<ol class="breadcrumb">
+		<div class="breadcum-wrap col-xs-3">
+			<ol class="breadcrumb mt10">
 				<li>
 					<a href="#">Home</a>
 
@@ -13,9 +13,12 @@
 			</ol>
 		</div>
 		<div class="col-xs-6">
+			<input type="search" class="form-control mt10" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
+		</div>
+		<div class="col-xs-3">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					<input type="search" class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
+					
 					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>
@@ -282,11 +285,13 @@
 
 <script id="query_result" type="text/html">
 	<div id="ScrollBox"   data-bind="foreach: name" style="border:1px solid;">
-    <div class="user-info-list" data-bind="click:function(){click_on_search($data.type,$data.id)}">
-						<a>  <h4><span data-bind="text:name"></span></h4>
+	
+    <div class="user-info-list when-filter" >
+    	<a  class="delete-icon pull-right" data-bind="click:function(){delete_search_result($data.type,$data.id)}"><i class="fa fa-trash-o"></i></a>
+					  <h4>	<input type="checkbox"><span data-bind="text:name,click:function(){click_on_search($data.type,$data.id)}"></span></h4>
 						<p class="discript" >
 							<span data-bind="text:email"></span>
-						</p> </a>
+						</p> 
 	</div>
 	</div>				
 </script>
