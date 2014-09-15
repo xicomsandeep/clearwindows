@@ -16,6 +16,7 @@ class JobsController extends AppController {
   {
   	if($this->request->is('Post'))
 	{
+		
 		if(empty($this->request->data['Job']['cost'])){
 			$this->request->data['Job']['cost']=0;
 		}
@@ -194,4 +195,31 @@ class JobsController extends AppController {
 			exit;
   }
 
+/**
+ * Purpose:get all job in rouund
+ * created on:10 sept 2014
+ * created by:Abhishek Tripathi
+ */ 
+ public function job_list_round(){
+ 	if($this->request->is('post')){
+ 	  	$jobs=array();
+	  $this->Job->unBindModel(array('hasMany'=>array('Account','Schedule'),'belongsTo'=>array('User','Customer')));
+ 	  $id=$this->request->data['id'];
+ 	  $jobs=$this->Job->find('all',array('conditions'=>array('Job.round_id'=>$id),'fields'=>array('id','subject')));
+	  //debug($jobs);exit;
+	  foreach($jobs as $job){
+	  	$job_list[]=array(
+		 'Job'=>$job['Job'],
+		
+		);
+	  }
+	  $res=response_arr('Successfully added',0,$job_list);
+			echo json_encode($res);
+			exit;
+	  
+	  
+ 	}
+ }
+ 
+ 
 }

@@ -67,6 +67,7 @@ class CustomersController extends AppController {
 		  append_condition($cond_arr, 'Customer.first_name', 'like', $query);
 		  append_condition($cond_arr, 'Customer.last_name', 'like', $query);
 		$customer_info=$this->Customer->find('all',array('conditions'=>array('OR'=>$cond_arr),'order'=>array('Customer.created'=>'desc')));
+		
 		}
 		else{
 			

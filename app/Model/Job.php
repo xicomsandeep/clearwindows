@@ -56,7 +56,7 @@ class Job extends AppModel {
 		if(isset($id)){
 			$condition=array('AND'=>array(
 			 'Job.customer_id'=>$id,
-			 'Job.cost <>'=>0
+			
 			));
 		} 
 		$this->recursive=2;  
@@ -128,7 +128,8 @@ class Job extends AppModel {
 		'job_id'=>$this->getLastInsertID()
 		));
 		$obj->save($event);
-		
+		//debug($this->data['Job']['round_id']);exit;
+		if(!empty($this->data['Job']['round_id'])){
 		$schedule=ClassRegistry::init('Schedule');
 		$data=array('Schedule'=>array(
 		'round_id'=>$this->data['Job']['round_id'],
@@ -136,6 +137,7 @@ class Job extends AppModel {
 		'round_position'=>$this->data['Job']['round_position']
 		));
 		$schedule->save($data);
+		}
 	}
 	
 	// beforedelete function for manage event log---------------------
@@ -185,7 +187,13 @@ class Job extends AppModel {
 			'className' => 'Account',
 			'foreignKey' => 'job_id',
 			'dependent' => true,
+		),
+		'Schedule' => array(
+			'className' => 'Schedule',
+			'foreignKey' => 'job_id',
+			'dependent' => true,
 		)
+		
 	);
 
 }

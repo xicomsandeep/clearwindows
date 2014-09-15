@@ -96,11 +96,22 @@
 							</div>
 							<!-----------------------------------------------------tab for account--------------------------------------------------------------->
 							<div class="tab-pane" id="Links_job">
-							
+							  
 							</div>
 							<!-----------------------------------------------------tab for account end --------------------------------------------------------------->
 							<!-----------------------------------------------------tab for links --------------------------------------------------------------->
-							<div class="tab-pane" id="settings_job"></div>
+							<div class="tab-pane settings" id="settings_job">
+								 Link to <input type="text" class="autocomplete2 link_input" data-bind="value: myValue, valueUpdate:'blur' " />
+								<div data-bind="foreach:job_detail">
+                                 <input type="hidden" id="job_refer_from_id" data-bind="value:Job.id">
+                                 <input type="hidden" id="job_refer_from_model" value="Job">
+                                </div> 
+								<ul data-bind="foreach:link_list" class="col-sm-12 row">
+									<li data-bind="html:link_to_icon+' '+link_to" class="col-sm-12 row"></li>
+								</ul>
+								<div class="clear"></div>
+								
+							</div>
 							<!-----------------------------------------------------tab for links --------------------------------------------------------------->
 						</div>
 					</div>
@@ -117,15 +128,16 @@
 <script id="job_details" type="text/html">
 <div id="ScrollBox"   data-bind="foreach: all_job_list" style="border:1px solid;">
 					<div class="user-info-list"  >
-						<a data-bind="click:function(){get_job_detail($data.Job.id)}"> <span data-bind="text:Job.created" class="post-time"></span> <h4><span data-bind="text:Job.subject"></span></h4></a>
+					 <a data-bind="click:function(){get_job_detail($data.Job.id)}"> <span data-bind="text:Job.created" class="post-time"></span> <h4><span data-bind="text:Job.subject"></span></h4>
 						<p class="discript" >
-							<h5><b>Customer Name:</b><span data-bind="text:Customer.first_name+ Customer.last_name,click:function(){get_user_info($data.Customer.id)}"></span></h5>
+							<h5><b>Customer Name:</b><span data-bind="text:Customer.first_name+ Customer.last_name"></span></h5>
 							<h5><b>Employee Name:</b><span data-bind="text:User.first_name+ User.last_name"></span></h5>
 							
 						</p>
 						<p data-bind="text:Job.description"></p>
 						 
 						<div></div>
+					 </a>	
 					</div>
 				</div>
 </script>				

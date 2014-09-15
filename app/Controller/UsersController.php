@@ -399,7 +399,42 @@ class UsersController extends AppController {
 	}
 	
 	
-	
-	 
+	  /**
+ * Purpose:get da
+ * created on:28 august 2014
+ * created by:Abhishek Tripathi
+ */  
+  public function link_search()
+  {
+  
+	{
+		$customers=array();	
+		$search_keyword=ltrim($this->params->query['term']);
+		$this->loadModel('Search');
+		$customer=$this->Search->find('all',array(
+               'conditions'=>array('OR'=>array('name LIKE '=> "%{$search_keyword}%",'email LIKE'=>"%{$search_keyword}%",'description LIKE'=>"%{$search_keyword}%")),
+                ));
+			 // debug($this->Search->getDataSource()->getLog(false, false));exit;			
+	  
+	  foreach($customer as $cus){
+	  	switch($cus['Search']['type']){
+			case 'Customer':$cus['Search']['icon']='<i class="glyphicon glyphicon-user"></i>';
+			break;
+		    case 'Event':$cus['Search']['icon']='<i class="glyphicon glyphicon-star-empty"></i>';
+			break;
+			case 'Job':$cus['Search']['icon']='<i class="glyphicon glyphicon-briefcase"></i>';
+			break;
+	  	}
+	  	$customers[]=$cus['Search'];
+	  }			
+		
+		$res=response_arr('Successfully added',0,$customers);
+			echo json_encode($customers);
+			exit;
+	}
+  }
+	 public function test2(){
+	 	
+	 }
 	
 }

@@ -3,6 +3,7 @@
 //Author:Abhishek Tripathi
 
 $(document).ready(function() {
+	
 	$('.asd').on('click', function() {
 		alert('sdfsdf');
 		$("#myModal_customer_info").modal('show');
@@ -42,14 +43,30 @@ $(document).ready(function() {
 	});
 	//-------------------------customer note form----------------------------
 
-	$('#customer_note').validate({
+	$('.customer_note').validate({
 
 		submitHandler : function(form) {
-			$('#customer_note').ajaxSubmit({
+			$('.customer_note').ajaxSubmit({
 				success : function(d) {
 					var data = JSON.parse(d);
 					if (data.error == 0) {
 						get_user_info(data.list);
+					}
+				}
+			});
+		}
+	});
+	
+		//-------------------------customer note form 10sep 2014----------------------------
+
+	$('.global_note').validate({
+
+		submitHandler : function(form) {
+			$('.global_note').ajaxSubmit({
+				success : function(d) {
+					var data = JSON.parse(d);
+					if (data.error == 0) {
+						//get_user_info(data.list);
 					}
 				}
 			});
@@ -150,8 +167,13 @@ $(document).ready(function() {
 	
 	
 	//---------------------data binding-------------------------------------
+	
+	
+	
 	// bind view model to html
 	ko.applyBindings(viewModel);
+	
+	
     // bind search query to html
 	viewModel.query.subscribe(viewModel.search);
 	// bind event search query to html
@@ -175,6 +197,7 @@ $(document).ready(function() {
 	
 	// get task list 
 	all_task_list();
+
 	
 	
 	$(".selectsearch").select2();
@@ -245,6 +268,8 @@ $(document).ready(function() {
 	 		}
 	 	}
 	 }); 
+	 
+	 
 	
 });
 
@@ -290,7 +315,18 @@ var viewModel = {
     
     //------------------------------------task section--------------------------------------
     task_list:ko.observable(),
+    
+    //--------------------------------------------autocomplete------------------------------
+    myValue: ko.observable(),
       
+    //----------------------------------------------links-----------------------------------
+    link_list:ko.observable(),
+    
+    //-------------------------------------------job_list_round------------------------------
+    job_list_round:ko.observableArray(),
+   // postion:ko.observableArray(['Hello','hello','hello']),
+      
+    
     temp:ko.observable('contact_details'),
 	incrementClickCounter : function() {
 
@@ -299,7 +335,7 @@ var viewModel = {
 
 	},
 	search : function(value) {
-		
+  
 		data_filter(value);
 	},
 	event_search : function(value) {
@@ -311,10 +347,14 @@ var viewModel = {
 	job_search:function(value){
 		job_list_filter(value);
 	}
+	
+
+
 };
 
 
-//Purpose:fetct data basis on fillter
+
+//Purpose:fetch data basis on fillter
 //created by:Abhishek Tripathi
 //created on:3 july 2014
 function data_filter(value) {
@@ -334,6 +374,7 @@ function data_filter(value) {
 function get_user_info(value) {
      
 	$('#myModal_customer_info').modal('show');
+	$('.link_input').show();
 	//$('#myTab a:first').tab('show');
 	$.post(siteurl + 'Customers/get_user_info', {
 		id : value
@@ -355,6 +396,8 @@ function get_user_info(value) {
 					var data = JSON.parse(d);
 					var parsed = JSON.parse(d);
 					viewModel.job_list(parsed.list);
+				//----------------------------------------------------	
+					link_list_id(value,'Customer');
 				});
 		    //-------------------------------------------------		
                 customer_accounts(value);
@@ -486,6 +529,7 @@ function get_job_detail(value){
 		var data = JSON.parse(d);
 		var parsed = JSON.parse(d);
 		viewModel.job_detail(parsed.list);
+			link_list_id(value,'Job');
 	});
  	
  }
@@ -599,5 +643,103 @@ function delete_search_result(type,id){
 }
 
 
+//Purpose:autocomplete for link search
+//created by:Abhishek Tripathi
+//created on:25 august 2014
 
- 
+$(function() {
+  
+    $(".autocomplete").autocomplete({
+      source: 'link_search',
+      select: function( event, ui ) {
+                var city =ui.item.name;
+                $('.autocomplete').val(' ');
+                //viewModel.myValue(city);
+                var reffer_from_id=$('#refer_from_id').val();
+                var reffer_from_model=$('#refer_from_model').val();
+                add_link(ui.item.id,ui.item.type,reffer_from_id,reffer_from_model,ui.item.name);
+                return false;
+           }
+            
+    })
+    .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+          return $( "<li >" ).append( "<a>"+ item.icon+"&nbsp;" + item.name + "</a>" ).appendTo( ul )};
+    //---------------------------job Link------------------------------
+    
+     $(".autocomplete2").autocomplete({
+      source: 'link_search',
+      select: function( event, ui ) {
+                var city =ui.item.name;
+                $('.autocomplete2').val(' ');
+               // viewModel.myValue(city);
+                var reffer_from_id=$('#job_refer_from_id').val();
+                var reffer_from_model=$('#job_refer_from_model').val();
+                add_link(ui.item.id,ui.item.type,reffer_from_id,reffer_from_model,ui.item.name);
+                return false;
+           }
+            
+    })
+    .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+          return $( "<li >" ).append( "<a>"+ item.icon+"&nbsp;" + item.name + "</a>" ).appendTo( ul )};      
+         
+ });
+
+//Purpose:add link on ajax request
+//created by:Abhishek Tripathi
+//created on:1 september 2014
+
+function add_link(refer_to_id,refer_to_model,refer_from_id,refer_from_model,subject){
+	switch(refer_to_model){
+		case 'Customer':var icon='<i class="glyphicon glyphicon-user"></i>';
+		break;
+		case 'Job':var icon='<i class="glyphicon glyphicon-briefcase"></i>';
+		break;
+		case 'Event':var icon='<i class="glyphicon glyphicon-star-empty"></i>';
+		break;
+	}
+	$.post(siteurl+'Links/add_link',{
+		relate_to_id:refer_to_id,
+		relate_to_model:refer_to_model,
+		relate_from_id:refer_from_id,
+		relate_from_modal:refer_from_model,
+		subject:subject,
+		icon:icon
+		},function(d){
+		var data=JSON.parse(d);	
+		  link_list_id(refer_from_id,refer_from_model);
+		});
+	
+} 
+
+
+//Purpose:get links of type and id basis
+//created by:Abhishek Tripathi
+//created on:1 september 2014
+
+function link_list_id(id,model){
+	  $.post(siteurl + 'Links/link_list',{
+	  	id:id,
+	  	model:model
+	  }, function(d) {
+		var parsed = JSON.parse(d);
+		viewModel.link_list(parsed.list);
+	});
+}
+
+//Purpose:click on round section to load all job on workspace
+//created by:Abhishek Tripathi
+//created on:1 september 2014
+
+function job_list_in_round(id){
+	
+	  $.post(siteurl + 'Jobs/job_list_round',{
+	  	id:id
+	  }, function(d) {
+		var parsed = JSON.parse(d);
+		viewModel.job_list_round(parsed.list);
+		viewModel.temp('round_job_details');
+	});
+}
+
+
+

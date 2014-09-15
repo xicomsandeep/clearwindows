@@ -13,12 +13,12 @@
 			</ol>
 		</div>
 		<div class="col-xs-6">
-			<input type="search" class="form-control mt10" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
+			<input class="form-control" data-bind="value: query, valueUpdate: 'keyup'" autocomplete="off" placeholder="Keywords" name="firstname" id="city" type="text" />
 		</div>
 		<div class="col-xs-3">
 			<form class="form-inline form-padding text-right add-input-sec">
 				<div class="form-group">
-					
+
 					<button type="button" onclick="javascript:open_form();" class="btn btn-success">
 						add
 					</button>
@@ -27,9 +27,9 @@
 		</div>
 		<div class="col-xs-12">
 			<div class="description-area">
-				<h3>Heading Title</h3>
+				<h3>Contacts</h3>
 				<div data-bind="template: { name: temp()}" >
-				
+
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -37,7 +37,7 @@
 	</div>
 </div>
 
-<?php echo $this->element('add_form');?>
+<?php echo $this -> element('add_form'); ?>
 <!------------------------------------------Customer information(Modal Window)------------------------------------------------------->
 <!-- Button trigger modal -->
 <!-- Modal -->
@@ -80,29 +80,29 @@
 							<label class="col-sm-3">Mobile NO:</label><span class="col-sm-9" data-bind="text:Customer.mobile_no"></span>
 						</div>
 					</div>
-					<div class="tab-pane" id="Notes" >
-						<?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add'),'id'=>'customer_note'))?>
+					<div class="tab-pane" id="Notes"  >
+						<?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add'),'class'=>'customer_note'))?>
 						<div class="checkbox">
-						    <label class="control-label">
-						      <input type="checkbox" name="data[Job][task]" value="1"  class="task_check task_check_box" rel="make_task_container"> Make Task
-						    </label>
-						 </div>
-						 <div class="checkbox">
-						    <label class="control-label">
-						      <input type="checkbox" class="task_check job_check" rel="make_job_container"> Make Job
-						    </label>
-						 </div>
+							<label class="control-label">
+								<input type="checkbox" name="data[Job][task]" value="1"  class="task_check task_check_box" rel="make_task_container">
+								Make Task </label>
+						</div>
+						<div class="checkbox">
+							<label class="control-label">
+								<input type="checkbox" class="task_check job_check" rel="make_job_container">
+								Make Job </label>
+						</div>
 						<div class="form-group row">
-								<label class="col-xs-3 control-label" for="TextArea">Job Type</label>
-	                          <div class="col-xs-4">
-									<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
-								    <select name="data[Job][job_types_id]"  class="selectsearch required" data-bind="options: job_type, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
-								</div>
-							</div> 
+							<label class="col-xs-3 control-label" for="TextArea">Job Type</label>
+							<div class="col-xs-4">
+								<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+								<select name="data[Job][job_types_id]"  class="selectsearch required" data-bind="options: job_type, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+							</div>
+						</div>
 						<div class="form-group row">
 							<label class="col-xs-3 control-label" for="inputEmail1">Subject</label>
 							<div class="col-xs-9" data-bind="foreach:user_info">
-								
+
 								<?php echo $this -> form -> input('Job.subject', array('label' => false, 'class' => 'form-control required')); ?>
 							</div>
 						</div>
@@ -112,38 +112,41 @@
 								<?php echo $this -> form -> input('Job.description', array('type' => 'textarea', 'label' => false, 'class' => 'form-control required')); ?>
 							</div>
 						</div>
-						
+
 						<!-----------------------------------------------------------------make job------------------------------------------------------------------------>
 						<div id="make_job_container">
 							<div class="form-group row make_job task_input" >
 								<label class="col-xs-3 control-label" for="TextArea">Due date</label>
 								<div class="col-xs-9">
-									<?php echo $this -> form -> input('Job.due_date', array('type' => 'text', 'label' => false, 'class' => 'form-control required  datepicker')); ?>
+									
+									<?php echo $this -> form -> input('Job.due_date', array('id'=>'duedate','type' => 'text', 'label' => false, 'class' => 'form-control required  datepicker', 'style' => 'width:50%')); ?>
 								</div>
 							</div>
 							<div class="make_job job_input">
-									<label class="checkbox-inline control-label">
-									  <input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox1" name="data[Job][fixed]" > Fixed
-									</label>
-									<label class="checkbox-inline">
-									  <input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox2" name="data[Job][monthly]" > Monthly
-									</label>
-									<label class="checkbox-inline">
-									  <input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox3" name="data[Job][weekly]" > Weekly
-									</label>
-						 </div><br/>
-							<div class="form-group row make_job task_input">
-								<label class="col-xs-3 control-label" for="TextArea">Delegate</label>
-	                          <div class="col-xs-4">
+								<label class="checkbox-inline control-label">
+									<input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox1" name="data[Job][fixed]" >
+									Fixed </label>
+								<label class="checkbox-inline">
+									<input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox2" name="data[Job][monthly]" >
+									Monthly </label>
+								<label class="checkbox-inline">
+									<input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox3" name="data[Job][weekly]" >
+									Weekly </label>
+							</div>
+							<br/>
+							<div class="form-group ">
+								<!--<label class="col-xs-3 control-label" for="TextArea">Delegate</label>-->
+								<div class="col-xs-4"  data-bind="foreach:user_info">
 									<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
-								    <select name="data[Job][customer_id]"  class="selectsearch required" data-bind="options: customer_list, optionsText: 'first_name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+									<!---<select name="data[Job][customer_id]"  class="selectsearch required" data-bind="options: customer_list, optionsText: 'first_name',optionsCaption: 'Select...', optionsValue: 'id'"></select>-->
+									<input name="data[Job][customer_id]"  type="hidden" data-bind="value:Customer.id">
 								</div>
 							</div>
 							<div class="form-group row make_job job_input" >
 								<label class="col-xs-3 control-label" for="TextArea">Round</label>
-	                          <div class="col-xs-4">
-									
-								    <select name="data[Job][round_id]"  class="selectsearch" data-bind="options: rounds, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+								<div class="col-xs-4">
+
+									<select name="data[Job][round_id]"  class="selectsearch" data-bind="options: rounds, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
 								</div>
 							</div>
 							<div class="form-group row make_job job_input" >
@@ -158,16 +161,16 @@
 									<?php echo $this -> form -> input('Job.cost', array('type' => 'text', 'label' => false, 'class' => 'form-control required')); ?>
 								</div>
 							</div>
-							
+
 						</div>
 						<!------------------------------------------------------------------------------------------------------------------------------------------------->
 						<div class="form-group row">
-						<div class="col-xs-4">
-							<input type="reset" class="btn btn-default" value="Reset">
-							<button type="submit" class="btn btn-success">
-								save
-							</button>
-						</div>
+							<div class="col-xs-4">
+								<input type="reset" class="btn btn-default" value="Reset">
+								<button type="submit" class="btn btn-success">
+									save
+								</button>
+							</div>
 						</div>
 						</form>
 						<div class="table-scroll mt40">
@@ -216,7 +219,7 @@
 
 								<?php echo $this -> form -> input('Account.service_date', array('type' => 'text', 'label' => false, 'class' => 'form-control required datepicker', 'style' => 'width:50%')); ?>
 							</div>
-							
+
 						</div>
 
 						<div class="form-group row">
@@ -255,7 +258,20 @@
 					</div>
 					<!-----------------------------------------------------tab for account end --------------------------------------------------------------->
 					<!-----------------------------------------------------tab for links --------------------------------------------------------------->
-					<div class="tab-pane" id="settings"></div>
+					<div class="tab-pane settings" id="settings">
+						
+						        
+								Link to <input type="text" class="autocomplete link_input" data-bind="value: myValue, valueUpdate:'blur' " style="display:none"/>
+								<div data-bind="foreach:user_info">
+                                 <input type="hidden" id="refer_from_id" data-bind="value:Customer.id">
+                                 <input type="hidden" id="refer_from_model" value="Customer">
+                                </div> 
+								<ul data-bind="foreach:link_list" class="col-sm-12 row">
+									<li data-bind="html:link_to_icon+' '+link_to" class="col-sm-12 row"></li>
+								</ul>
+								<div class="clear"></div>
+
+					</div>
 					<!-----------------------------------------------------tab for links --------------------------------------------------------------->
 				</div>
 			</div>
@@ -271,32 +287,28 @@
 <!-------------------------------------template for customer search resutl----------------------------------------->
 <script id="contact_details" type="text/html">
 	<div id="ScrollBox"   data-bind="foreach: name" style="border:1px solid;">
-    <div class="user-info-list"  data-bind="click:function(){get_user_info($data.id)}">
-						<a> <span data-bind="text:created" class="post-time"></span> <h4><span data-bind="text:first_name"></span><span data-bind="text:last_name"></span></h4>
-						<p class="discript" >
-							<span data-bind="text:email"></span>
-							<span data-bind="text:mobile_no"></span>
-						</p> </a>
+	<div class="user-info-list"  data-bind="click:function(){get_user_info($data.id)}">
+	<a> <span data-bind="text:created" class="post-time"></span> <h4><span data-bind="text:first_name"></span><span data-bind="text:last_name"></span></h4>
+	<p class="discript" >
+	<span data-bind="text:email"></span>
+	<span data-bind="text:mobile_no"></span>
+	</p> </a>
 	</div>
-	<div>				
+	<div>
 </script>
 <!-------------------------------------template for customer search resutl----------------------------------------->
 <!-------------------------------------template for global search resutl----------------------------------------->
 
 <script id="query_result" type="text/html">
 	<div id="ScrollBox"   data-bind="foreach: name" style="border:1px solid;">
-	
-    <div class="user-info-list when-filter" >
-    	<a  class="delete-icon pull-right" data-bind="click:function(){delete_search_result($data.type,$data.id)}"><i class="fa fa-trash-o"></i></a>
-					  <h4>	<input type="checkbox"><span data-bind="text:name,click:function(){click_on_search($data.type,$data.id)}"></span></h4>
-						<p class="discript" >
-							<span data-bind="text:email"></span>
-						</p> 
+
+	<div class="user-info-list when-filter" >
+	<a  class="delete-icon pull-right" data-bind="click:function(){delete_search_result($data.type,$data.id)}"><i class="fa fa-trash-o"></i></a>
+	<h4>	<input type="checkbox"><span data-bind="text:name,click:function(){click_on_search($data.type,$data.id)}"></span></h4>
+	<p class="discript" >
+	<span data-bind="text:email"></span>
+	</p>
 	</div>
-	</div>				
+	</div>
 </script>
-
-
-
-
 

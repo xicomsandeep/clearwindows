@@ -112,12 +112,29 @@
 			  
 			  
 			  <div class="view_job view_stuff">
-			      	<?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add_job'),'id'=>'job_form'))?>
+			      <?php echo $this->Form->create('Job',array('url'=>array('controller'=>'Jobs','action'=>'add'),'class'=>'global_note','id'=>'global_add'))?>
+						<div class="checkbox">
+							<label class="control-label">
+								<input type="checkbox" name="data[Job][task]" value="1"  class="task_check task_check_box" rel="make_task_container">
+								Make Task </label>
+						</div>
+						<div class="checkbox">
+							<label class="control-label">
+								<input type="checkbox" class="task_check job_check" rel="make_job_container">
+								Make Job </label>
+						</div>
+						<div class="form-group row">
+							<label class="col-xs-3 control-label" for="TextArea">Job Type</label>
+							<div class="col-xs-4">
+								<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+								<select name="data[Job][job_types_id]"  class="selectsearch required" data-bind="options: job_type, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+							</div>
+						</div>
 						<div class="form-group row">
 							<label class="col-xs-3 control-label" for="inputEmail1">Subject</label>
 							<div class="col-xs-9" >
-								
-								<?php echo $this -> form -> input('Job.subject', array('type'=>'text','label' => false, 'class' => 'form-control required')); ?>
+
+								<?php echo $this -> form -> input('Job.subject', array('label' => false, 'class' => 'form-control required')); ?>
 							</div>
 						</div>
 						<div class="form-group row">
@@ -126,28 +143,55 @@
 								<?php echo $this -> form -> input('Job.description', array('type' => 'textarea', 'label' => false, 'class' => 'form-control required')); ?>
 							</div>
 						</div>
-						<div class="form-group row">
 
-							<div class="col-xs-6 col-xs-4">
-								<?php echo $this -> Form -> input('Job.user_id', array('type' => 'select', 'empty' => __('Employee'), 'class' => 'selectsearch required', 'options' => $employee, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+						<!-----------------------------------------------------------------make job------------------------------------------------------------------------>
+						<div id="make_job_container">
+							<div class="form-group row make_job task_input" >
+								<label class="col-xs-3 control-label" for="TextArea">Due date</label>
+								<div class="col-xs-9">
+									<?php echo $this -> form -> input('Job.due_date', array('type' => 'text', 'label' => false, 'class' => 'form-control required  datepicker')); ?>
+								</div>
 							</div>
-							<div class="col-xs-6 col-xs-4">
-								<select name="data[Job][round_id]"  class="selectsearch" data-bind="options: rounds, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
-								<?php //echo $this -> Form -> input('Job.round_id', array('type' => 'select', 'empty' => __('Rounds'), 'class' => 'selectsearch', 'options' => $round, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+							<div class="make_job job_input">
+								<label class="checkbox-inline control-label">
+									<input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox1" name="data[Job][fixed]" >
+									Fixed </label>
+								<label class="checkbox-inline">
+									<input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox2" name="data[Job][monthly]" >
+									Monthly </label>
+								<label class="checkbox-inline">
+									<input type="checkbox" onclick="javascript:if($(this).is(':checked')){$(this).val(1)}else{$(this).val(0)}" id="inlineCheckbox3" name="data[Job][weekly]" >
+									Weekly </label>
 							</div>
-							<div class="col-xs-6 col-xs-4">
-								<label>
-								<select name="data[Job][customer_id]"  class="selectsearch" data-bind="options: customer_list, optionsText: 'first_name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
-								<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+							<br/>
+							<div class="form-group row make_job task_input">
+								<label class="col-xs-3 control-label" for="TextArea">Delegate</label>
+								<div class="col-xs-4">
+									<?php //echo $this -> Form -> input('Job.schedule', array('type' => 'select', 'empty' => __('Schedule'), 'class' => 'selectsearch', 'options' => $customer_type, 'label' => '', 'style' => 'width: 100%;height:34px')); ?>
+									<select name="data[Job][customer_id]"  class="selectsearch required" data-bind="options: customer_list, optionsText: 'first_name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+								</div>
 							</div>
-							<div class="col-xs-4">
-								<input type="reset" class="btn btn-default" value="Reset">
-								<button type="submit" class="btn btn-success">
-									save
-								</button>
+							<div class="form-group row make_job job_input" >
+								<label class="col-xs-3 control-label" for="TextArea">Round</label>
+								<div class="col-xs-4">
+
+									<select name="data[Job][round_id]"  class="selectsearch" data-bind="options: rounds, optionsText: 'name',optionsCaption: 'Select...', optionsValue: 'id'"></select>
+								</div>
 							</div>
+							<div class="form-group row make_job job_input" >
+								<label class="col-xs-3 control-label" for="TextArea">Round Position</label>
+								<div class="col-xs-9">
+									<?php echo $this -> form -> input('Job.round_position', array('type' => 'text', 'label' => false, 'class' => 'form-control required')); ?>
+								</div>
+							</div>
+							<div class="form-group row make_job job_input" >
+								<label class="col-xs-3 control-label" for="TextArea">Service charge</label>
+								<div class="col-xs-9">
+									<?php echo $this -> form -> input('Job.cost', array('type' => 'text', 'label' => false, 'class' => 'form-control required')); ?>
+								</div>
+							</div>
+
 						</div>
-						</form>
 							
 			  </div>	
 		</div>

@@ -4646,3 +4646,1154 @@ Stack Trace:
 #3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-08-28 12:22:22 Error: [MissingActionException] Action UsersController::search.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'search.php',
+)
+Request URL: /clearwindows/users/search.php?term=abh
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-30 11:35:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-30 11:35:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-30 11:35:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-30 11:35:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-01 09:31:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2003] Can\'t connect to MySQL server on \'192.168.1.200\' (4)',
+  'enabled' => true,
+)
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/clearwindows/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Model.php(3221): ConnectionManager::getDataSource('default')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1108): Model->setDataSource('default')
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(3243): Model->setSource('users')
+#5 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): Model->getDataSource()
+#6 /var/www/clearwindows/app/Controller/AppController.php(70): Model->find('first', Array)
+#7 /var/www/clearwindows/app/Controller/UsersController.php(26): AppController->beforeFilter()
+#8 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#9 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-01 09:32:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2003] Can\'t connect to MySQL server on \'192.168.1.200\' (4)',
+  'enabled' => true,
+)
+Request URL: /clearwindows/users/dashboard
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/clearwindows/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Model.php(3221): ConnectionManager::getDataSource('default')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1108): Model->setDataSource('default')
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(3243): Model->setSource('users')
+#5 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): Model->getDataSource()
+#6 /var/www/clearwindows/app/Controller/AppController.php(70): Model->find('first', Array)
+#7 /var/www/clearwindows/app/Controller/UsersController.php(26): AppController->beforeFilter()
+#8 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#9 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-01 12:23:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'subject' cannot be null
+Request URL: /clearwindows/Links/add_link
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/clearwindows/app/Controller/LinksController.php(20): Model->save(Array)
+#5 [internal function]: LinksController->add_link()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(LinksController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-01 12:30:43 Error: [MissingActionException] Action LinksController::lnk_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'lnk_list',
+)
+Request URL: /clearwindows/Links/lnk_list
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-01 12:31:01 Error: [MissingActionException] Action LinksController::lnk_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'lnk_list',
+)
+Request URL: /clearwindows/Links/lnk_list
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-01 12:31:45 Error: [MissingActionException] Action LinksController::link_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'link_list',
+)
+Request URL: /clearwindows/Links/link_list
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-01 12:32:15 Error: [MissingActionException] Action LinksController::link_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'link_list',
+)
+Request URL: /clearwindows/Links/link_list
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-01 12:33:08 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Links/link_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Links/link_list.ctp',
+)
+Request URL: /clearwindows/Links/link_list
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-03 09:10:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'icon' cannot be null
+Request URL: /clearwindows/Links/add_link
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/clearwindows/app/Controller/LinksController.php(21): Model->save(Array)
+#5 [internal function]: LinksController->add_link()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(LinksController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-03 09:10:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'icon' cannot be null
+Request URL: /clearwindows/Links/add_link
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/clearwindows/app/Controller/LinksController.php(21): Model->save(Array)
+#5 [internal function]: LinksController->add_link()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(LinksController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-08 11:22:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:22:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:22:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:24:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_454545_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:26:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:28:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:28:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:28:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:29:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:29:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:29:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:29:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_454545_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:29:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:30:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:30:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:30:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:32:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:32:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:32:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:32:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:33:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:33:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:33:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:33:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:34:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(130): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:35:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:35:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:35:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:35:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(130): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:36:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(130): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:38:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:38:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:38:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 11:38:47 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Jobs/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Jobs/add.ctp',
+)
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-08 11:40:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/delete_job
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(156): Model->save(Array)
+#5 [internal function]: Job->beforeDelete(true)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(2399): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(68): Model->delete('58')
+#9 [internal function]: JobsController->delete_job()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:41:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(138): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:43:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(138): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:44:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(138): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 11:48:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(138): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 12:01:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(138): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 12:02:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(138): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-08 12:05:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-08 12:50:46 Error: Fatal Error (1): Call to undefined function deug() in [/var/www/clearwindows/app/Controller/LinksController.php, line 57]
+2014-09-08 12:50:46 Error: [FatalErrorException] Call to undefined function deug()
+Request URL: /clearwindows/Links/link_list
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/clearw...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/clearw...', 57, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/clearw...', 57, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-10 10:19:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'relate_from' cannot be null
+Request URL: /clearwindows/Links/add_link
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/clearwindows/app/Controller/LinksController.php(21): Model->save(Array)
+#5 [internal function]: LinksController->add_link()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(LinksController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-10 11:29:50 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2013] Lost connection to MySQL server at \'reading authorization packet\', system error: 0',
+  'enabled' => true,
+)
+Request URL: /clearwindows/Customers/get_data
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(262): Mysql->connect()
+#1 /var/www/clearwindows/lib/Cake/Model/ConnectionManager.php(107): DboSource->__construct(Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Model.php(3221): ConnectionManager::getDataSource('default')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1108): Model->setDataSource('default')
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(3243): Model->setSource('users')
+#5 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): Model->getDataSource()
+#6 /var/www/clearwindows/app/Controller/AppController.php(70): Model->find('first', Array)
+#7 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#8 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/clearwindows/lib/Cake/Controller/Controller.php(670): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(184): Controller->startupProcess()
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest), Object(CakeResponse))
+#12 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-09-10 12:35:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'round_id' in where clause is ambiguous
+Request URL: /clearwindows/Jobs/job_list_round
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Job`.`i...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `Job`.`i...', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1080): DboSource->fetchAll('SELECT `Job`.`i...', false)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Job), Array)
+#5 /var/www/clearwindows/app/Controller/JobsController.php(206): Model->find('all', Array)
+#6 [internal function]: JobsController->job_list_round()
+#7 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-10 12:41:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 12:41:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 12:41:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 12:41:21 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Jobs/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Jobs/add.ctp',
+)
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-10 12:48:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'description' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(130): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-10 12:50:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'round_position' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Schedule), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(139): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(32): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-10 12:53:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 12:53:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 12:53:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 12:53:34 Error: [MissingViewException] View file "/var/www/clearwindows/app/View/Jobs/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/clearwindows/app/View/Jobs/add.ctp',
+)
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/clearwindows/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-10 13:03:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Job), Array, Array)
+#4 /var/www/clearwindows/app/Controller/JobsController.php(33): Model->save(Array)
+#5 [internal function]: JobsController->add()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-10 13:07:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:07:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:07:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:07:17 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'customer_id' cannot be null
+Request URL: /clearwindows/Jobs/add
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Event), Array, Array)
+#4 /var/www/clearwindows/app/Model/Job.php(130): Model->save(Array)
+#5 [internal function]: Job->afterSave(true, Array)
+#6 /var/www/clearwindows/lib/Cake/Event/CakeEventManager.php(246): call_user_func_array(Array, Array)
+#7 /var/www/clearwindows/lib/Cake/Model/Model.php(1772): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/clearwindows/app/Controller/JobsController.php(33): Model->save(Array)
+#9 [internal function]: JobsController->add()
+#10 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#11 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#13 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-09-10 13:08:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:08:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:08:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:23:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:23:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:23:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-10 13:30:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'relate_from' cannot be null
+Request URL: /clearwindows/Links/add_link
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `cl...', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(1007): DboSource->execute('INSERT INTO `cl...')
+#3 /var/www/clearwindows/lib/Cake/Model/Model.php(1744): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/clearwindows/app/Controller/LinksController.php(21): Model->save(Array)
+#5 [internal function]: LinksController->add_link()
+#6 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(LinksController), Array)
+#7 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-10 13:49:54 Error: Fatal Error (1): Call to a member function getDataSourse() on a non-object in [/var/www/clearwindows/app/Controller/UsersController.php, line 422]
+2014-09-10 13:49:54 Error: [FatalErrorException] Call to a member function getDataSourse() on a non-object
+Request URL: /clearwindows/users/link_search?term=+scralet
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/clearw...', 422)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/clearw...', 422, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/clearw...', 422, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-10 13:50:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getDataSourse' at line 1
+Request URL: /clearwindows/users/link_search?term=+scrale
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getDataSourse', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('getDataSourse', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('getDataSourse', Array, Array)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(800): DboSource->query('getDataSourse', Array, Object(Search))
+#5 /var/www/clearwindows/app/Controller/UsersController.php(422): Model->__call('getDataSourse', Array)
+#6 /var/www/clearwindows/app/Controller/UsersController.php(422): Search->getDataSourse()
+#7 [internal function]: UsersController->link_search()
+#8 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-10 14:04:47 Error: Fatal Error (64): Cannot redeclare CustomersController::get_data_filter() in [/var/www/clearwindows/app/Controller/CustomersController.php, line 114]
+2014-09-10 14:04:47 Error: [FatalErrorException] Cannot redeclare CustomersController::get_data_filter()
+Request URL: /clearwindows/Customers/get_data_filter
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/clearw...', 114)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/clearw...', 114, Array)
+#2 /var/www/clearwindows/lib/Cake/Core/App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/clearw...', 114, Array)
+#3 /var/www/clearwindows/lib/Cake/Core/App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-12 04:44:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 04:44:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 04:44:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 04:56:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'unBind' at line 1
+Request URL: /clearwindows/Jobs/job_list_round
+Stack Trace:
+#0 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('unBind', Array)
+#2 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('unBind', Array, Array)
+#3 /var/www/clearwindows/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('unBind', Array, Array)
+#4 /var/www/clearwindows/lib/Cake/Model/Model.php(800): DboSource->query('unBind', Array, Object(Job))
+#5 /var/www/clearwindows/app/Controller/JobsController.php(206): Model->__call('unBind', Array)
+#6 /var/www/clearwindows/app/Controller/JobsController.php(206): Job->unBind(Array)
+#7 [internal function]: JobsController->job_list_round()
+#8 /var/www/clearwindows/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(JobsController), Array)
+#9 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/clearwindows/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(JobsController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-12 05:28:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:28:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_888888_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:29:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:29:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_888888_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:32:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:32:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_888888_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:32:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 05:32:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_888888_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 09:07:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_888888_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 09:07:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 09:22:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-12 09:22:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /clearwindows/css/images/ui-icons_888888_256x240.png
+Stack Trace:
+#0 /var/www/clearwindows/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -89,6 +89,12 @@ ul li { list-style:none;}
 .right-tabing.popup-tab li a{ background: #d8e2ec; border:1px solid #d8e2ec; border-bottom:0 none; color: #374866;}
 .right-tabing.popup-tab li.active a,.right-tabing.popup-tab li.active a,.right-tabing.popup-tab li.active a:hover,.right-tabing.popup-tab li.active a:focus,.right-tabing.popup-tab li:hover a,.right-tabing.popup-tab li:focus a{ border:0 none;  background: #f5f5f5;} 
 .right-tabing.popup-tab li{ background: #fff; margin-bottom: -2px!important;}
+
+.right-tabing.popup-tab .settings { color: #374769;}
+.right-tabing.popup-tab .settings li { width: 100%; background-color: transparent; padding: 10px 15px; border-top: 1px solid #ccc; box-shadow: 0 1px 0 #fff inset;}
+.right-tabing.popup-tab .settings li:first-child { border-top: none; box-shadow: none;}
+.right-tabing.popup-tab .settings li a { color: #374769;}
+
 .modal-header{ background: #374769; border-radius: 5px 5px 0 0; color: #fff;}
 .modal-content{ border: 0;}
 .modal-footer{ border: 0 none; border-top: 3px solid #38466B; margin-top: 0; background: #374769; border-radius: 0 0 5px 5px;}
@@ -137,3 +143,6 @@ ul li { list-style:none;}
 .when-filter.user-info-list h4 input[type="checkbox"]{ left: -22px; margin: 0;  position: absolute; top: 1px;}
 .when-filter .delete-icon i{ color: #AE0000;}
 .when-filter .delete-icon{ position: relative; z-index: 999;}
+
+.ui-autocomplete { max-height: 200px; overflow: auto;}
+.ui-autocomplete .ui-menu-item.ui-state-focus { margin: -1px 0 -1px -1px; border-right: 0;}

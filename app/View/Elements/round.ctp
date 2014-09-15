@@ -72,7 +72,7 @@
 <script id="round_details" type="text/html">
 	<div id="ScrollBox"   data-bind="foreach: round_list" style="border:1px solid;">
     <div class="user-info-list"">
-						<a>  <h4><span data-bind="text:name"></span></h4>
+						<a>  <h4  data-bind="click:function(){job_list_in_round($data.id)}"><span data-bind="text:name"></span></h4>
 						<p class="discript" >
 							<span data-bind="text:count+' jobs'"></span>
 							
@@ -80,6 +80,24 @@
 						
 					</div>
 	</div>				
+</script>
+
+
+<!-----------------------------job in round-------------------------------------------------------------------------->
+<?php echo $this->Html->script(array('knockout-sortable'));?>
+<script id="round_job_details" type="text/html">
+<div id="ScrollBox"   data-bind="sortable:job_list_round" style="border:1px solid;">
+    <div class="user-info-list"">
+						<a> <h4><span data-bind="text:Job.subject"></span></h4>
+						<p class="discript" >
+							<span data-bind=""></span>
+							
+						</p> </a>
+						
+					</div>
+	</div>	
+	
+	
 </script>
 	
 		
